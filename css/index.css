@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner{ width:100%; height:600px; cursor:pointer; position:relative;}
+.banner ul{ position:relative; overflow:hidden; height:100%; }
+.banner ul li{ width:100%; height:100%; position:absolute; display:none; cursor:pointer; background-color: #fff; }
+.banner ul li a{ width:100%; height:100%; display:block; background-position:center center; background-repeat:no-repeat;}
+.banner .cirbg{ width:100%; height:30px; line-height:30px; overflow:hidden; background-color:rgba(0,0,0,0.2); position:absolute; bottom:0;  z-index:55;}
+.banner ol{overflow:hidden; text-align: center; margin-top: 2px;}
+.banner ol li{ width:12px; height:12px; border-radius:12px; display:inline-block; margin-right:8px; background-color:#FFF;  cursor:pointer;}
+.banner ol .current{ background-color:#EF2C71;}
+
+.container{ width:100%;}
+.container .main{ padding:20px 0;}
+.container .main .notice{ height:26px; line-height: 26px; border:2px solid #FF82AF;}
+.container .main .notice .tit{ font-size: 14px; color:#f6424e; float:left; margin:0 20px 0 15px;}
+.container .main .notice .notInf{ overflow:hidden; float:left;}
+.container .main .notice .notInf li{ float:left; margin-right: 70px;}
+.container .main .notice .notInf li a{ display:block; color:#999; font-size: 14px;}
+.container .main .notice .notInf li a:hover{ color:#f6424e; }
+.container .main .notice .more{ float:right; margin-right: 10px; }
+.container .more a{ color:#000;}
+.container .more a:hover{ color:#db2868; text-decoration:underline;}
+.proShow{ margin-top: 20px; overflow:hidden;}
+.proShow .lab{ height:44px;  margin-top: 20px; border-bottom-width:2px ;  border-bottom-style: solid;}
+.proShow .lab a.more{ margin-top: 20px; margin-right: 10px;}
+.proShow .lab a:hover.more{ text-decoration: underline; color:#EF2C71;}
+.proShow.proHot .lab{  border-bottom-color:#06c7b2;}
+.proShow .lab .title{ width: 210px; height:44px; display:block;} 
+.proShow .lab a.chg{ margin-top: 20px;}
+.proShow .lab a:hover.chg{ color:#f6424e; }
+.proShow .proList{ margin-top: 40px;}
+.proShow .proList ul{ overflow: hidden;}
+.proShow .proList ul li{ float:left; margin-right: 20px;}
+.proShow .proList ul li.mr0{ margin-right: 0;}
+.proShow .proList ul li:nth-of-type(4n){ margin-right: 0;}
+.proShow .proList ul li a{display:block; background:#fff; padding: 10px; overflow:hidden; }
+.proShow .proList ul li a .tp{ width:214px; height:240px; margin:0 auto; margin-top: 10px; overflow:hidden;}
+.proShow.proHot .proList ul li{  width:256px; height:354px; border:2px solid #EFEFEF; }
+.proShow.proHot .poList ul li a .tp{ width:240px; height:240px; overflow:hidden;}
+.proShow .proList ul li a img{ margin: 0 auto; }
+.proShow .proList ul li.smaPic a .tp{ width:198px; height:190px; overflow:hidden; margin:0 auto; margin-top: 10px;}
+.proShow .proList ul li.smaPic a img{ } 
+.proShow .proList ul li .txt{ line-height: 20px; margin-top: 30px;}
+.proShow.proHot .proList ul li .txt{ margin-top: 10px;}
+.proShow .proList ul li .txt .name{ font-size: 14px; color:#000;}
+.proShow .proList ul li .txt span{ display:block;}
+.proShow .proList ul li .txt .price{ color:#fe7747; font-size: 20px; margin-top: 5px;}
+.proShow.proHigh .lab{ border-bottom-color: #007dd2;}
+.proShow.proHigh ul li{ margin-right: 0; height:300px; overflow:hidden;}
+.proShow.proHigh ul li{border:1px solid #efefef;}
+.proShow.proHigh ul li.ml{ border-left-color: transparent;}
+.proShow.proHigh ul li.mt{ border-top-color: transparent;}
+.proShow.proHigh ul li a:hover{ border-color: #db2868;}
+.proShow.proHigh ul li.bigPic a{ padding:0;}
+.proShow.proHigh ul li.bigPic a .tp{width:438px; height:300px; margin-top: 0; overflow:hidden;}
+.proShow .proList ul li.cur{border-color:#db2868;}
+.proShow.proFine .lab{ border-bottom-color:#ee2a70;}
+.proShow.proBaby .lab{ border-bottom-color:#77c848;}
+
+
+.container .in .notPro{/*  border:2px solid #ef2c71;  */height: 140px; margin-top: 5px;}
+.container .in .notPro .notice{ width:340px;  font-size: 14px;  overflow: hidden; }
+.container .in .notPro .notice .notIn{ margin: 7px 25px;}
+.container .in .notPro .notice .hd{ color: #f6424e;}
+.container .in .notPro .notice .bd{ overflow: hidden; padding-left: 20px; height: 96px;}
+.container .in .notPro .notice .bd ul li{line-height: 24px; color: #999; overflow: hidden; white-space: nowrap; text-overflow:ellipsis;}
+.container .in .notPro .notice .bd ul li a:hover{ color: #ef2c71;}
+.container .in .notPro .notice .bd ul li i{ width: 8px; height: 8px; border-radius: 50%; background-color: #a0a0a0; display: inline-block; margin-right: 8px; vertical-align: middle;}
+.container .in .notPro .progess{ width: 750px; height: 140px; /* border-left: 2px solid #ef2c71; */}
+.container .in .notPro .progess .proIn{ padding: 30px 0 30px 40px; color: #999;}
+.container .in .notPro .progess .proIn .tit{ width: 30px; font-size: 30px;}
+.container .in .notPro .progess .proIn ol{ overflow: hidden; margin-left: 60px;}
+.container .in .notPro .progess .proIn ol li{ float: left;}
+.container .in .notPro .progess .proIn ol li .item{ float: left;}
+.container .in .notPro .progess .proIn ol li .item .txt{ margin-top: 8px; display: block;}
+.container .in .notPro .progess .proIn ol li i{ background: url("../img/img-index/arr.png") no-repeat; width: 13px; height: 11px; display: inline-block; float: left; margin: 25px 22px;}
+.container .product .tit{  text-align: center; margin-top: 40px;}
+.container .product .tit img{ display: inline-block;}
+.container .product .item .picList{ margin-top: 30px; overflow: hidden;}
+.container .product .item .picList ul{ overflow: hidden;}
+.container .product .item .picList ul li{ float: left;}
+.container .product .item .picList ul li a{ display: inline-block; overflow: hidden;}
+.container .product .item .picList ul li a img{ width: 100%; height: 100%;  -webkit-transition: -webkit-transform 0.3s;  -moz-transition: -moz-transform 0.3s;  -o-transition: -o-transform 0.3s;  transition: transform 0.3s;}
+.container .product .item .picList ul li a img:hover{-webkit-transform: scale(1.08);-moz-transform: scale(1.08); -ms-transform: scale(1.08); -o-transform: scale(1.08);transform: scale(1.08);}
+.container .product .item01 .picList ul li a{ width: 360px; height: 285px;}
+.container .product .item02 .picList ul li a{ width: 530px; height: 280px;}
+.container .product .item03 .picList ul li a{ width: 530px; height: 280px;}
+.container .news{ margin-top: 60px; height: 330px; overflow: hidden;}
+.container .news .newL{ width: 540px;}
+.container .news .newL .tit h5{ font-size: 30px; color: #000;}
+.container .news .newL  a{ width: 444px; height: 278px; display: inline-block; overflow: hidden;}
+.container .news .newL  a img{ width: 100%;}
+.container .news .newL  a:hover img{ opacity: 0.9;filter: alpha(opacity=90);}
+.container .news .newR{ width: 560px;}
+.container .news .newR .tit{ overflow: hidden;}
+.container .news .newR .tit h6{ font-size: 20px; color: #000; float: left;}
+.container .news .newR .tit a.more{ font-size: 13px; color: #828282; float: right; margin-top: 5px;}
+.container .news .newR .tit a:hover.more{ color: #ef2c71;}
+.container .news .newR .mid{ margin-top: 20px;}
+.container .news .newR .mid .pic{ float: left; position: relative;}
+.container .news .newR .mid .pic a{ width: 190px; height: 130px; display: block; overflow: hidden;}
+.container .news .newR .mid .pic a img{ width: 100%;}
+.container .news .newR .mid .pic a:hover img{ opacity: 0.9; filter: alpha(opacity=90);}
+.container .news .newR .mid .pic span{ width: 100%; height: 30px; line-height: 30px; background-color: rgba(0,0,0,0.5); color: #fff; position: absolute; left: 0; bottom:0;text-align: center; display: block; }
+.container .news .newR .mid .txt{ margin-left: 210px; height: 136px;overflow: hidden;}
+.container .news .newR .mid .txt ul li{ line-height: 34px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.container .news .newR .mid .txt ul li a{color: #a0a0a0;}
+.container .news .newR .mid .txt ul li a:hover{color: #ef2c71;}
+.container .news .newR .mid .txt ul li a i{ width: 10px; height: 10px; background-color: #a0a0a0; display: inline-block; margin-right: 5px;}
+.container .news .newR .teamwork{ margin-top: 20px;}
+.container .news .newR .teamwork .ti{ font-size: 15px; color: #a5a5a5; margin-bottom: 10px;}
+.container .news .newR .teamwork ul{ overflow: hidden;}
+.container .news .newR .teamwork ul li{ float: left; margin-right:25px; height: 43px; line-height: 43px;}
+.container .news .newR .teamwork ul li a{ display: inline-block;}
+.container .news .newR .teamwork ul li a img{ width: 100%;}
+.container .proSend{ margin-top: 50px; overflow: hidden; padding-bottom: 40px; border-bottom: 2px solid #a0a0a0;}
+.container .proSend  .hd{ width: 350px; width: 100%; height: 44px; line-height: 44px; background-color: #ef2c71; color:#fff; text-align: center; font-size: 20px;}
+.container .proSend .problem{ width: 560px;}
+.container .proSend .problem .list{ overflow: hidden;}
+.container .proSend .problem .list ul{ overflow: hidden;}
+.container .proSend .problem .list ul li a:hover{ color: #ef2c71;}
+.container .proSend .problem .list ul li h6{ line-height:30px; margin-top: 5px;}
+.container .proSend .problem .list ul li h6 a{ font-size: 18px; color: #000;}
+.container .proSend .problem .list ul li h6 a:hover{ text-decoration: underline; color: #ef2c71;}
+.container .proSend .problem .list ul li p{ line-height: 20px; padding-left: 15px;}
+.container .proSend .problem .more{ text-align: right; margin-top: 10px;}
+.container .proSend .problem .more a{ color: #828282;}
+.container .proSend .problem .more a:hover{ color: #ef2c71;;}
+.container .proSend .send .list{ overflow: hidden; height: 264px; margin-top: 2px;}
+.container .proSend .send .list ul li{ line-height: 22px; color: #333;}
+.container .proSend .send .list ul li span{ margin: 0 2px;}
+
+
+
+

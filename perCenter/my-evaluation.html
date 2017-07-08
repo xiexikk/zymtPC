@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>印了吗商城</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/my.css">
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/my.js"></script>   
+</head>
+
+<body>
+
+<!-- 顶部导航 -->
+<div id="siteNav">
+    <div class="navIn w1100 m0a">
+        <div class="inL fl">
+            <a href="index.html" class="tit">印了吗商城首页</a>
+        </div>
+        <div class="inR fr">
+            <ul>
+                <li class="noLog">
+                    <a href="javascript:;">hi,麦兜兜</a>
+                    <a href="javascript:;">退出</a>
+                </li>
+                <li class="regLog">
+                    <a href="../loginReg/register.html" class="reg"><span>注册</span></a>
+                    <a href="javascript:;" class="log"><span>登录</span></a>
+                </li>
+                <li class="myPc">
+                    <a href="../perCenter/my.html" class="tit">
+                        <span>我的账号</span>
+                        <i class="arrow iconSprite"></i>
+                    </a>
+                    <ol class="pcBot">
+                        <li><a href="../perCenter/my-message.html">我的消息</a></li>
+                        <li><a href="../perCenter/my-coupon.html">我的优惠劵</a></li>
+                        <li><a href="../perCenter/my-works.html">我的作品</a></li>
+                    </ol>
+                </li>
+                <li class="myPrinted">
+                    <a href="javascript:;" class="tit">
+                        <span>手机印制</span>
+                        <i class="arrow iconSprite"></i>
+                    </a>
+                    <ol class="priBot">
+                        <li><a href="javascript:;" title="android下载"><img src="img/img-index/ewm.png"><span>android</span></a></li>
+                        <li><a href="javascript:;" title="ios下载"><img src="img/img-index/ewm.png"><span>ios</span></a></li>
+                        <li><a href="javascript:;" title="iPad下载"><img src="img/img-index/ewm.png"><span>iPad</span></a></li>
+                    </ol>
+                </li>
+                <li class="myOrder">
+                    <a href="javascript:;" class="tit">
+                        <span>我的订单（<em>3</em>）</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- logo区 -->
+<div id="logoCon">
+    <div class="conIn w1100 m0a">
+        <div class="logo fl">
+            <h1><a href="index.html" title="印了吗">印了吗</a></h1>
+        </div>
+        <div class="adv fl"></div>
+        <div class="tel fr"></div>
+    </div>
+</div>
+
+<!-- 导航区 -->
+<div id="nav">
+    <div class="navCon w1100 m0a">
+        <ul>
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">儿童相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">旅游相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">聚会相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">毕业册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">台历</a></li>
+            <li><a href="../washPhoto/wash.html">冲洗相册</a></li>
+            <li><a href="../activity/actList.html">活动专区</a></li>          
+        </ul>
+    </div>
+</div>
+
+<!-- 我的评价 -->
+<div id="myCom">
+    <div class="comIn w1100 m0a">
+        <div class="evlCon">
+            <div class="conL fl">
+                <div class="hd">
+                    <h5 class="tit">评价</h5>
+                </div>
+                <div class="bd">
+                    <div class="pic">
+                        <img src="../img/img-my/yhtx.png" height="110" width="110">
+                    </div>
+                    <div class="txt">
+                        <p>
+                            <span>商品名：</span><span>我的可爱宝贝</span>
+                        </p>
+                        <p>
+                            <span>商品价格：</span><span>￥96.60</span>
+                        </p>
+                        <p>
+                            <span>购买数量：</span><span>1件</span>
+                        </p>
+                        <p>
+                            <span>购买价格：</span><span>￥96.60</span>
+                        </p>
+                        <p>
+                            <span>购买时间：</span><span>2016.02.12</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="conR fl">
+                <div class="rIn">
+                    <div class="stars">
+                        <span class="tit">评分：</span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p><span></span></p>
+                    </div>
+                    <div class="inp">
+                        <span class="tit">评价内容：</span>
+                        <textarea name="" placeholder="亲，您对此次购买还满意吗？说点什么分享吧~" id="textAreal" onkeyup="words_deal();"></textarea>
+                        <span class="bdTxt"><em id="textCount">0</em>/300</span>
+                    </div>
+                    <script type="text/javascript"> 
+                        function words_deal(){ 
+                            var curLength=$("#textAreal").val().length; 
+                            if(curLength>300){ 
+                                var num=$("#textAreal").val().substr(0,300); 
+                                $("#textAreal").val(num); 
+                                //alert("最多只能输入300个字符！" ); 
+                            }else { 
+                                $("#textCount").text($("#textAreal").val().length); 
+                            } 
+                        } 
+                    </script> 
+                    <div class="subBtn">
+                        <input type="submit" value="立即评价" onclick='window.open("my-sucEval.html")'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 服务 -->
+<div id="botSer" class="w1100 m0a">
+    <ul>
+        <li><a href="javascript:;"><img src="../img/img-index/ser01.png"></a></li>
+        <li><a href="javascript:;"><img src="../img/img-index/ser02.png"></a></li>
+        <li><a href="javascript:;"><img src="../img/img-index/ser03.png"></a></li>
+    </ul>
+</div>
+
+<!-- 底部信息 -->
+<div id="footHandle">
+    <div class="handleCon w1100 m0a">
+        <dl class="dl01">
+            <dt><i class="iconSprite"></i>帮助中心</dt>
+            <dd><a href="../helpCenter/help.html">在线客服</a></dd>
+            <dd><a href="../helpCenter/help.html">找回密码</a></dd>
+            <dd><a href="../helpCenter/help.html">隐私说明</a></dd>
+        </dl>
+        <dl class="dl02">
+            <dt><i class="iconSprite"></i>配送及支付</dt>
+            <dd><a href="../helpCenter/help.html">配送时间及费用</a></dd>
+            <dd><a href="../helpCenter/help.html">支付方式</a></dd>
+            <dd><a href="../helpCenter/help.html">快递查询</a></dd>
+        </dl>
+        <dl class="dl03">
+            <dt><i class="iconSprite"></i>关于我们</dt>
+            <dd><a href="../helpCenter/help.html">联系我们</a></dd>
+            <dd><a href="../helpCenter/help.html">品牌故事</a></dd>
+            <dd><a href="../helpCenter/help.html">招贤纳士</a></dd>
+        </dl>
+        <dl class="dl04">
+            <dt><i class="iconSprite"></i>手机冲印</dt>
+            <dd><a href="javascript:;" title="android下载"><img src="../img/img-index/ewm.png"><span>android下载</span></a></dd>
+            <dd><a href="javascript:;" title="ios下载"><img src="../img/img-index/ewm.png"><span>ios下载</span></a></dd>
+            <dd><a href="javascript:;" title="iPad下载"><img src="../img/img-index/ewm.png"><span>iPad下载</span></a></dd>
+        </dl>
+    </div>
+</div>
+
+<!-- 版权所有 -->
+<div id="footer">
+    <div class="footerIn w1100 m0a">
+        <p class="p1">广州指印数码科技有限公司</p>
+        <p class="p2">Copyright 2010-2016 All Rights Reserved. <a href="http://www.miitbeian.gov.cn">粤ICP备16046154号</a></p>
+        <ul>
+            <li><a href="javascript:;"><img src="../img/img-index/bott01.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott02.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott03.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott04.png"></a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+

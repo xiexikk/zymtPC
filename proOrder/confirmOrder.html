@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>印了吗商城</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/order.css">
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/order.js"></script>
+</head>
+
+<body>
+
+<!-- 顶部导航 -->
+<div id="siteNav">
+    <div class="navIn w1100 m0a">
+        <div class="inL fl">
+            <a href="index.html" class="tit">印了吗商城首页</a>
+        </div>
+        <div class="inR fr">
+            <ul>
+                <li class="noLog">
+                    <a href="javascript:;">hi,麦兜兜</a>
+                    <a href="javascript:;">退出</a>
+                </li>
+                <li class="regLog">
+                    <a href="../loginReg/register.html" class="reg"><span>注册</span></a>
+                    <a href="javascript:;" class="log"><span>登录</span></a>
+                </li>
+                <li class="myPc">
+                    <a href="../perCenter/my.html" class="tit">
+                        <span>我的账号</span>
+                        <i class="arrow iconSprite"></i>
+                    </a>
+                    <ol class="pcBot">
+                        <li><a href="../perCenter/my-message.html">我的消息</a></li>
+                        <li><a href="../perCenter/my-coupon.html">我的优惠劵</a></li>
+                        <li><a href="../perCenter/my-works.html">我的作品</a></li>
+                    </ol>
+                </li>
+                <li class="myPrinted">
+                    <a href="javascript:;" class="tit">
+                        <span>手机印制</span>
+                        <i class="arrow iconSprite"></i>
+                    </a>
+                    <ol class="priBot">
+                        <li><a href="javascript:;" title="android下载"><img src="img/img-index/ewm.png"><span>android</span></a></li>
+                        <li><a href="javascript:;" title="ios下载"><img src="img/img-index/ewm.png"><span>ios</span></a></li>
+                        <li><a href="javascript:;" title="iPad下载"><img src="img/img-index/ewm.png"><span>iPad</span></a></li>
+                    </ol>
+                </li>
+                <li class="myOrder">
+                    <a href="javascript:;" class="tit">
+                        <span>我的订单（<em>3</em>）</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- logo区 -->
+<div id="logoCon">
+    <div class="conIn w1100 m0a">
+        <div class="logo fl">
+            <h1><a href="index.html" title="印了吗">印了吗</a></h1>
+        </div>
+        <div class="adv fl"></div>
+        <div class="tel fr"></div>
+    </div>
+</div>
+
+<!-- 导航区 -->
+<div id="nav">
+    <div class="navCon w1100 m0a">
+        <ul>
+            <li><a href="../index.html">首页</a></li>            
+            <li><a href="../photoAlbum/photoAlbum.html">儿童相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">旅游相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">聚会相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">毕业册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">台历</a></li>
+            <li><a href="../washPhoto/wash.html">冲洗相册</a></li>
+            <li><a href="../activity/actList.html">活动专区</a></li>          
+        </ul>
+    </div>
+</div>
+
+<!-- 订单信息 -->
+<div id="orderCom">
+    <div class="comIn w1100 m0a">
+        <div class="hd">
+            <ol>
+                <li>
+                    <span class="ico iconSprite ico1"></span>
+                    <p class="txt" style="color:#08c5b1; ">
+                        <span>第一步</span>
+                        <span>填写收货信息</span>
+                    </p>
+                    <i class="iconSprite"></i>
+                </li>
+                <li>
+                    <span class="ico iconSprite ico2"></span>
+                    <p class="txt">
+                        <span>第二步</span>
+                        <span>支付</span>
+                    </p>
+                    <i class="iconSprite"></i>
+                </li>
+                <li>
+                    <span class="ico iconSprite ico3"></span>
+                    <p class="txt">
+                        <span>第三步</span>
+                        <span>等待发货</span>
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <div class="addInf">
+            <div class="infCon">
+                <div class="chd">
+                    <h6 class="tit">收货地址</h6>
+                    <div class="def">
+                        <p>将配送至 <span>麦兜兜</span> <span>12345678910</span> <span>广州市白云区云城中路228创意园C3栋301室</span></p>
+                    </div>
+                </div>
+                <div class="ccd">
+                    <div class="add">
+                        <a href="javascript:;"><i class="iconSprite"></i>添加新地址</a>
+                    </div>
+                    <div class="addList">
+                        <ul>
+                            <li class="cur">
+                                <i class="iconSprite"></i>
+                                <span>麦兜兜</span>
+                                <span>12345678910</span>
+                                <span>广州市白云区云城中路228创意园C3栋301室</span>
+                                <p>
+                                    <a href="javascript:;" class="del">删除</a>
+                                    <em>|</em>
+                                    <a href="javascript:;" class="edit">编辑</a>
+                                </p>
+                            </li>
+                            <li>
+                                <i class="iconSprite"></i>
+                                <span>麦兜兜</span>
+                                <span>12345678910</span>
+                                <span>广州市白云区云城中路228创意园C3栋302室</span>
+                                <p>
+                                    <a href="javascript:;" class="del">删除</a>
+                                    <em>|</em>
+                                    <a href="javascript:;" class="edit">编辑</a>
+                                </p>
+                            </li>
+                            <li>
+                                <i class="iconSprite"></i>
+                                <span>麦兜兜</span>
+                                <span>12345678910</span>
+                                <span>广州市白云区云城中路228创意园C3栋303室</span>
+                                <p>
+                                    <a href="javascript:;" class="del">删除</a>
+                                    <em>|</em>
+                                    <a href="javascript:;" class="edit">编辑</a>
+                                </p>
+                            </li>
+                            <li>
+                                <i class="iconSprite"></i>
+                                <span>麦兜兜</span>
+                                <span>12345678910</span>
+                                <span>广州市白云区云城中路228创意园C3栋304室</span>
+                                <p>
+                                    <a href="javascript:;" class="del">删除</a>
+                                    <em>|</em>
+                                    <a href="javascript:;" class="edit">编辑</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="infCon">
+                <div class="chd">
+                    <h6 class="tit">确认订单</h6>
+                </div>
+                <div class="orderList">
+                    <ol>
+                        <li>
+                            <div class="hdTit">
+                                 <span class="ti ti01">商品</span>
+                                 <span class="ti ti02">单价</span>
+                                 <span class="ti ti03">数量</span>
+                                 <span class="ti ti04">优惠</span>
+                                 <span class="ti ti05">小计</span>
+                            </div>
+                        </li>
+                    </ol>
+                    <ul>
+                        <li>
+                            <div class="ti01 con con01">
+                                <div class="pic fl">
+                                    <a href="javascript:;"><img src="../img/img-order/pro.png" height="76" width="56"></a>
+                                </div>
+                                <div class="txt fl">
+                                    <span>美美啦啦相册</span>
+                                    <span>台历 24p</span>
+                                    <span>46张照片</span>
+                                </div>
+                            </div>
+                            <div class="ti02 con con02">
+                                <span>88.0</span>
+                                <del>166.0</del>
+                            </div>
+                            <div class="ti03 con con03">
+                                <div class="han">
+                                    <span class="iconSprite reduceBtn"></span>
+                                    <div class="inp"><input type="tetx" value="1"></div>
+                                    <span class="iconSprite addBtn"></span>
+                                </div>
+                            </div>
+                            <div class="ti04 con con04">
+                                <div class="sel">
+                                    <select>
+                                        <option value="">不使用优惠劵</option>
+                                        <option value="">10元优惠劵</option> 
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="ti05 con con05">
+                                <span>￥88.0</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ti01 con con01">
+                                <div class="pic fl">
+                                    <a href="javascript:;"><img src="../img/img-order/pro.png" height="76" width="56"></a>
+                                </div>
+                                <div class="txt fl">
+                                    <span>美美啦啦相册</span>
+                                    <span>台历 24p</span>
+                                    <span>46张照片</span>
+                                </div>
+                            </div>
+                            <div class="ti02 con con02">
+                                <span>88.0</span>
+                                <del>166.0</del>
+                            </div>
+                            <div class="ti03 con con03">
+                                <div class="han">
+                                    <span class="iconSprite reduceBtn"></span>
+                                    <div class="inp"><input type="text" value="1"></div>
+                                    <span class="iconSprite addBtn"></span>
+                                </div>
+                            </div>
+                            <div class="ti04 con con04">
+                                <div class="sel">
+                                    <select>
+                                        <option value="">不使用优惠劵</option>
+                                        <option value="">10元优惠劵</option> 
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="ti05 con con05">
+                                <span>￥88.0</span>
+                            </div>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="note">
+                    <textarea name="" placeholder="在这开始备注信息，先和卖家达成共识"></textarea>
+                </div>
+            </div>
+        </div> 
+        <div class="infCon">
+            <div class="chd">
+                <h6 class="tit">配送方式</h6>
+            </div>
+            <div class="courier">
+                <div class="item bn cur">
+                    <i class="iconSprite"></i>
+                    <p>
+                        <span class="sp1">普通快递&nbsp;&nbsp;&nbsp;&nbsp;运费8元</span>
+                        <span class="sp2">先付款，汇通、圆通、邮政小包、韵达等随机。</span>
+                    </p>
+                </div>
+                <div class="item bn">
+                    <i class="iconSprite"></i>
+                    <p>
+                        <span class="sp1">顺丰快递&nbsp;&nbsp;&nbsp;&nbsp;运费13元</span>
+                        <span class="sp2">全国派送范围内1至3天左右。县级以下地区不到，建议选择邮政小包</span>
+                    </p>
+                </div>  
+            </div>
+            <div class="count">
+                <p><span>商品价格：</span><span>￥203.50</span></p>
+                <p><span>优惠：</span><span>不使用优惠劵</span></p>
+                <p><span>运费：</span><span style="color:#f06332;">￥8.00</span></p>
+                <p><span>实付款：</span><span style="color:#f06332; font-size:18px;">￥184.0</span></p>
+                <div class="subBtn">
+                    <input type="submit" value="提交订单" onclick='window.open("payOrder.html")'>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 服务 -->
+<div id="botSer" class="w1100 m0a">
+    <ul>
+        <li><a href="javascript:;"><img src="../img/img-index/ser01.png"></a></li>
+        <li><a href="javascript:;"><img src="../img/img-index/ser02.png"></a></li>
+        <li><a href="javascript:;"><img src="../img/img-index/ser03.png"></a></li>
+    </ul>
+</div>
+
+<!-- 底部信息 -->
+<div id="footHandle">
+    <div class="handleCon w1100 m0a">
+        <dl class="dl01">
+            <dt><i class="iconSprite"></i>帮助中心</dt>
+            <dd><a href="../helpCenter/help.html">在线客服</a></dd>
+            <dd><a href="../helpCenter/help.html">找回密码</a></dd>
+            <dd><a href="../helpCenter/help.html">隐私说明</a></dd>
+        </dl>
+        <dl class="dl02">
+            <dt><i class="iconSprite"></i>配送及支付</dt>
+            <dd><a href="../helpCenter/help.html">配送时间及费用</a></dd>
+            <dd><a href="../helpCenter/help.html">支付方式</a></dd>
+            <dd><a href="../helpCenter/help.html">快递查询</a></dd>
+        </dl>
+        <dl class="dl03">
+            <dt><i class="iconSprite"></i>关于我们</dt>
+            <dd><a href="../helpCenter/help.html">联系我们</a></dd>
+            <dd><a href="../helpCenter/help.html">品牌故事</a></dd>
+            <dd><a href="../helpCenter/help.html">招贤纳士</a></dd>
+        </dl>
+        <dl class="dl04">
+            <dt><i class="iconSprite"></i>手机冲印</dt>
+            <dd><a href="javascript:;" title="android下载"><img src="../img/img-index/ewm.png"><span>android下载</span></a></dd>
+            <dd><a href="javascript:;" title="ios下载"><img src="../img/img-index/ewm.png"><span>ios下载</span></a></dd>
+            <dd><a href="javascript:;" title="iPad下载"><img src="../img/img-index/ewm.png"><span>iPad下载</span></a></dd>
+        </dl>
+    </div>
+</div>
+
+<!-- 版权所有 -->
+<div id="footer">
+    <div class="footerIn w1100 m0a">
+        <p class="p1">广州指印数码科技有限公司</p>
+        <p class="p2">Copyright 2010-2016 All Rights Reserved. <a href="http://www.miitbeian.gov.cn">粤ICP备16046154号</a></p>
+        <ul>
+            <li><a href="javascript:;"><img src="../img/img-index/bott01.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott02.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott03.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott04.png"></a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

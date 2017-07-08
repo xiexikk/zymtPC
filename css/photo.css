@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+#photo{ width:100%; overflow:hidden;}
+#photo .poster{ background: url(../img/img-photoAlbum/pos.png) center top; height:400px;}
+#photo .phoCom{ margin-top: 20px;}
+#photo .phoCom .hdTi{ font-size: 14px; line-height: 40px;}
+#photo .phoCom .hdTi span{ margin: 0 2px;}
+#photo .phoCom .hdTi a:hover{ text-decoration: underline; color: #ef2c71;}
+#photo .phoCom .screen{ padding: 20px 15px; border: 1px solid #e3e5e5; overflow:hidden;}
+#photo .phoCom .screen .items{ overflow:hidden;} 
+#photo .phoCom .screen h4{ color:#333; font-size:20px; float: left; width:70px;}
+#photo .phoCom .screen .items ul{ overflow:hidden;}
+#photo .phoCom .screen .items ul li{ float:left;  width:130px; cursor:pointer; margin: 5px 0;}
+#photo .phoCom .screen .items ul li i{ width:20px; height:20px; background-position: -5px -185px; cursor: pointer; float:left; }
+#photo .phoCom .screen .items ul li.cur i{ background-position: -30px -185px;} 
+#photo .phoCom .screen .items ul li p { margin-left: 8px; float:left;}
+#photo .phoCom .screen .items ul li span{ display:block;font-size: 14px;}
+#photo .phoCom .screen .items01{ margin-bottom: 20px;}
+#photo .phoCom .screen .items02 ul li{ margin-right: 10px;}
+#photo .phoCom .screen .items02 .norms {overflow: hidden; padding-left: 25px;}
+#photo .phoCom .screen .items02 .norms{text-align: center; margin-right: 60px; float: left;}
+#photo .phoCom .screen .items02 .norms .tp{ display: block; width: 86px; height: 86px; overflow: hidden;}
+#photo .phoCom .screen .items02 .norms .txt{ margin-top: 5px; color: #999;}
+
+#photo .phoCom .picCon{ margin-top: 20px;}
+#photo .phoCom .picCon .hd{ border: 1px solid #e3e5e5; padding:10px; overflow:hidden; }
+#photo .phoCom .picCon .hd .hdL{ font-size: 14px; cursor:pointer;}
+#photo .phoCom .picCon .hd .hdL a{ margin-right: 40px;}
+#photo .phoCom .picCon .hd .hdL a:hover,#photo .phoCom .picCon .hd .hdL a.cur{ color:#ef2c71;}
+#photo .phoCom .picCon .hd .hdL i{ width:9px; height:14px; background-position: -60px -190px; vertical-align: middle; margin:0 2px;}
+#photo .phoCom .picCon .hd .hdL a:hover i,#photo .phoCom .picCon .hd .hdL a.cur i{ background-position: -70px -190px;}
+#photo .phoCom .picCon .hd .hdR span{ margin-right: 10px;}
+#photo .phoCom .picCon .hd .hdR em{ color:#ef2c71; padding:0 1px;}
+#photo .phoCom .picCon .hd .hdR a:hover{ color:#ef2c71; text-decoration: underline;}
+#photo .phoCom .picCon .show{ overflow:hidden; margin-top: 15px;}
+#photo .phoCom .picCon .show ul{ overflow:hidden;}
+#photo .phoCom .picCon .show ul li{ float:left;width:273px; height:360px; border:1px solid transparent; margin-bottom: 25px;}
+#photo .phoCom .picCon .show ul li.cur{ border-color:#ef2c71;}
+#photo .phoCom .picCon .show ul li .pic{ display:block;}
+#photo .phoCom .picCon .show ul li .pic .tp{ height:280px; cursor:pointer; position:relative;}
+#photo .phoCom .picCon .show ul li .pic .tp img{ width:270px; height:280px; margin:0 auto; }
+#photo .phoCom .picCon .show ul li .pic .tp p{ width:100%; max-height:40px; line-height: 40px; background-color: rgba(0,0,0,0.2); color:#000; text-align: center; position:absolute; bottom:0; display:none;}
+#photo .phoCom .picCon .show ul li.cur .pic .tp p{ display:block;}
+#photo .phoCom .picCon .show ul li .pic .tp p em{ color:#ef2c71; font-weight: 600; padding:0 2px;}
+#photo .phoCom .picCon .show ul li .txt { padding:10px;}
+#photo .phoCom .picCon .show ul li .txt .name{ margin-bottom: 15px; color:#000;white-space:nowrap;text-overflow: ellipsis; overflow: hidden;}
+#photo .phoCom .picCon .show ul li .txt .name:hover{ text-decoration: underline; color: #ea2b6f;}
+#photo .phoCom .picCon .show ul li .txt .price{ color:#fe7747; font-size: 20px;}
+#photo .phoCom .picCon .show ul li .txt .printe{ float:right;}
+#photo .phoCom .picCon .show ul li .txt .printe button{ padding:5px 10px; background-color:#ea2b6f; color:#fff; border-radius: 10px; cursor: pointer;}
+
+

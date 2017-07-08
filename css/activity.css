@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*actList.html*/
+#actCom{ overflow: hidden;}
+#actCom .comIn{ overflow:hidden;}
+#actCom .comIn .poster{ margin-bottom: 50px;}
+#actCom .comIn .poster a{ display: block;}
+#actCom .comIn .actList .listUl{ overflow:hidden;}
+#actCom .comIn .actList .listUl li{ margin-bottom: 30px; border: 1px solid #e3e5e5; height:270px;}
+#actCom .comIn .actList .listUl li .pic{ width:720px;}
+#actCom .comIn .actList .listUl li .pic a{ display:block;}
+#actCom .comIn .actList .listUl li .txt{ width:338px; padding: 20px;}
+#actCom .comIn .actList .listUl li .tit{ font-size: 20px; height:80px; overflow:hidden; color: #1e1b1b; margin-top: 10px;}
+#actCom .comIn .actList .listUl li .con{ height:120px; margin-top: 10px; overflow:hidden;}
+#actCom .comIn .actList .listUl li .con p{ font-size: 14px; color:#666; line-height: 24px;}
+#actCom .comIn .bd{ text-align: right;} 
+#actCom .comIn .bd i{ width:20px; height:14px; background-position: -2px -155px; }
+#actCom .comIn .bd span{ margin-left: 5px; color:#f00; }
+
+/*actListDet.html*/
+#actCom .comIn .hdTit{ margin:20px 0; font-size: 14px;}
+#actCom .comIn .hdTit a:hover{ text-decoration: underline;}
+#actCom .comIn .hdTit i.arrow{ background-position: -4px -90px; width:8px; height:9px; margin:0 5px;}
+#actCom .comIn .hdTit i.arrow2{  background-position: -20px -90px;}
+#actCom .comIn .intro{ margin-top: 20px; overflow:hidden;}
+#actCom .comIn .intro .tit{ text-align: center; font-size: 24px; color:#1e1b1b;}
+#actCom .comIn .intro .pag{ padding:30px 20px; border:1px solid #e3e5e5; margin-top: 30px;}
+#actCom .comIn .intro .pag p{ font-size: 14px; line-height: 28px;}
+#actCom .comIn .intro .pic{ text-align: center; margin-top: 20px;}
+#actCom .comIn .intro .pic img{ margin:0 auto;}

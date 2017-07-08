@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/*wash.html*/
+#wash{ width:100%; overflow:hidden;}
+#wash .poster{ background: url(../img/img-wash/poster.png) center top; height:400px;}
+.washIn{ margin-top: 40px; overflow:hidden;}
+.washIn .hd{ height:117px; position:relative;}
+.washIn .hd .cxBtn{ background:url(../img/img-wash/cxbtn.png) no-repeat; width:370px; height:117px; position: absolute; right: 0; top:0; text-align: center; line-height: 117px; }
+.washIn .hd .cxBtn span{font-size: 30px; color:#fff; display: block; padding-left: 20px;}
+.washIn .norms{ margin-top: 35px;}
+.washIn .norms .tit{ background-color: #08c5b1; height:50px; line-height: 50px; font-size: 20px; color:#fff; padding-left: 20px; }
+.gridSize{ width:1098px; height:400px; overflow:hidden; border:1px solid #ccc;}
+.gridSize .pic{ width:540px; }
+.gridSize .pic ul{ overflow:hidden;}
+.gridSize .pic ul li{ width:100%;height:100%; float: left; text-align: center;}
+.gridSize .pic ul li img{ display: inline-block;width:100%; }
+.gridSize .txt{ width:558px;height: 100%;}
+.gridSize .txt ol{ overflow:hidden; height: 100%;}
+.gridSize .txt ol li { height: 20%; line-height: 80px; font-size: 20px; overflow:hidden; cursor: pointer;}
+.gridSize .txt ol li.cur{ background-color:#ebebeb;}
+.gridSize .txt ol li div{ float:left;}
+.gridSize .txt ol li span{display: inline-block;}
+.gridSize .txt ol li .di1{ width: 240px;}
+.gridSize .txt ol li .di2{ width: 180px;}
+.gridSize .txt ol li .di3{ width: 138px; display: none;}
+.gridSize .txt ol li.cur .di3{ display: block;}
+.gridSize .txt ol li .di1 .sp1{ padding-left:120px;color:#484848;}
+.gridSize .txt ol li .di2 .sp2{ color:#e85e33; padding-left: 60px;}
+.gridSize .txt ol li .di3 a{ width: 106px; height: 38px; line-height: 38px; text-align: center; color: #fff; font-size: 14px; background-color: #fa8b88; display: inline-block;}
+.gridSize .txt .more{ float:right;}
+.gridSize .txt .more a{ color:#fff; background-color: #c5a28d; padding:5px; display:block; margin-top: 10px; margin-right: 10px;}
+.process{ margin-top: 35px; padding-bottom:20px; overflow:hidden;}
+.process .tit{  background:url(../img/img-wash/cxlc.png) no-repeat; width:255px; height:53px; line-height: 53px;}
+.process .tit span{ padding-left: 20px;color:#323c3d; font-size: 20px;}
+.process .con{ margin-top: 50px;}
+.process .con ul{ overflow:hidden; padding-left: 100px;}
+.process .con ul li { float:left; text-align: center;}
+.process .con ul li .pic{width:120px; float:left;}
+.process .con ul li i{ background:url(../img/img-wash/jt.png); width:16px; height:21px;  float:left; margin:45px 30px 0;}
+.process .con ul li img{ display:inline-block;}
+.process .con ul li span{ color:#323c3d;font-size: 20px; margin-top: 18px; display:block;}
+
+/*gridSize.html*/
+.washSize .hd{text-align: center; padding:20px 0;}
+.washSize .hd .ti{ font-size: 18px; font-weight: bold; line-height: 40px;}
+.washSize .hd a{ padding:10px 6px; color:#fff; background-color: #d43132; float:right;}
+.Sizetable thead th,.Sizetable thead td {background: #D5D5D5;text-align: center;border: 1px solid #999; color:#000; font-size: 13px;}
+.Sizetable thead th p{ padding:12px 0;}
+.Sizetable tbody td{text-align: center;border: 1px solid #999; padding:6px 0;}
+
+/*washOperate.html*/
+html{ width:100%; height:100%;}
+body{ width:100%; height:100%;}
+#headLogo{ height:34px; line-height: 34px;background-color: #fff; width:100%; position:fixed; left:0 ;top:0;}
+#headLogo .inL .logo{ width: 68px;height: 30px; background: url(../img/img-index/logo.png) no-repeat;background-size:contain; display: block; float:left;margin-top:2px; margin-left: 10px;}
+#headLogo .inL .logo a{width: 68px;height: 0px;padding-top: 31px;overflow: hidden;display: block;}
+#headLogo .inL .tit{ color:#ea3600; font-size: 14px; font-weight: 600; padding-left: 10px; float:left;}
+#headLogo .inR{ font-size: 14px; color:#666;}
+#headLogo .inR span{ margin-right: 10px; cursor:pointer;}
+#headLogo .inR .user{ color:#f00;cursor:pointer;}
+#headLogo .inR span a:hover{ color:#db2868; text-decoration:underline;}
+.operateIn{ background-color:#ea2b6f; width:100%; min-height: 100%; position:fixed; left:0; top:34px;}
+.operateIn .hd{ line-height: 64px; height:64px; text-align:center;background-color:#ea2b6f;}
+.operateIn .hd span{ font-size: 20px; color:#fff;}
+.operateIn .hd i{ background:url(../img/img-wash/bjt.png) no-repeat; background-size: contain; width:40px; height:15px; margin: 0 20px; display:inline-block;}
+.operateIn .main .in{ background-color: #fff; overflow:hidden; margin:0 10px;}
+.operateIn .main .in .inL{ width:340px; overflow:hidden; background-color: #ebebeb;  float:left; position:fixed; left:20px; top:108px;}
+.operateIn .main .in .inL .tabHd{overflow:hidden; }
+.operateIn .main .in .inL .tabHd ol{overflow:hidden;}
+.operateIn .main .in .inL .tabHd ol li{ width:160px; height:40px; line-height: 40px; text-align: center; font-size: 20px; color:#000; background-color: #ebebeb;cursor:pointer; position:relative;}
+.operateIn .main .in .inL .tabHd ol li.li01{ border-right: 20px solid #fff;}
+.operateIn .main .in .inL .tabHd ol li.cur{ background-color:#ea2b6f; color:#fff;}
+.operateIn .main .in .inL .tabHd ol li.cur i{ position:absolute; right:4px; bottom:4px; background:url(../img/img-wash/ch.png) no-repeat; width:17px; height:17px; background-size: contain;}
+.operateIn .main .in .inL .tabBd{overflow:hidden; border-top: 15px solid #fff;}
+.operateIn .main .in .inL .tabBd ul li{ overflow:hidden;}
+.operateIn .main .in .inL .tabBd ul li .item .ti{ overflow:hidden;}
+.operateIn .main .in .inL .tabBd ul li .item .ti span{float:left; font-size: 20px; color:#000; line-height: 40px; text-align: center;}
+.operateIn .main .in .inL .tabBd ul li .item .ti .sp1{ width:55%;}
+.operateIn .main .in .inL .tabBd ul li .item .ti .sp2{ width:45%;}
+.operateIn .main .in .inL .tabBd ul li .item .tit span{ line-height: 60px;}
+.operateIn .main .in .inL .tabBd ul li .des{ padding:0 12px; margin-top:90px;color:#666;}
+.operateIn .main .in .inC{ margin-top: 10px; background-color: #ebebeb; position:relative; margin-left: 360px; margin-right: 360px;}
+.operateIn .main .in .inC .opHd{ margin-top: 10px; margin-left: 10px; overflow:hidden;}
+.operateIn .main .in .inC .opHd .sel{ font-size: 14px; color:#000; margin-right: 20px; margin-top: 5px; cursor:pointer;}
+.operateIn .main .in .inC .opHd .sel i{ width:19px; height:19px; background:url(../img/img-wash/no-check.png) no-repeat; background-size:contain;  vertical-align: middle; margin-right: 5px; cursor:pointer; display:inline-block; vertical-align: sub;}
+.operateIn .main .in .inC .opHd .sel.checked i{ background:url(../img/img-wash/check.png) no-repeat; background-size: contain;}
+.operateIn .main .in .inC .opHd .sel label{ cursor:pointer;}
+.operateIn .main .in .inC .opHd span { display:inline-block; float:left;}
+.operateIn .main .in .inC .opHd span input{ height:28px; line-height: 28px; background-color: #fff; text-align: center; border:1px solid #ccc; border-radius: 4px; display:inline-block; margin-right: 10px; cursor:pointer; color:#666;}
+.operateIn .main .in .inC .opHd .del input{ width:62px;}
+.operateIn .main .in .inC .opHd .batch input{ width:74px; }
+.operateIn .main .in .inC .opHd .addPic {background-color: #08c5b1; width:100px; height:28px; text-align:center;position:relative; border-radius: 4px; }
+.operateIn .main .in .inC .opHd .addPic label{color:#fff; position:absolute; left:0; top:0; width:100%; height:28px; line-height: 28px; z-index: 2;cursor:pointer;}
+.operateIn .main .in .inC .opHd .addPic input{ opacity: 0; position:absolute; left:0; top:0;width:100%; height:28px; line-height: 28px;cursor:pointer;}
+.operateIn .main .in .inC .picList{ margin-top: 15px; height:80%; overflow:auto;}
+.operateIn .main .in .inC .picList ul li{ width:134px; height:185px; background-color: #fff; float:left; margin-left: 8px; margin-right:8px; margin-bottom: 15px; position:relative;}
+.operateIn .main .in .inC .picList ul li .item{ padding:10px;}
+.operateIn .main .in .inC .picList ul li .item .pic a.tp{ width:105px; height:105px; overflow:hidden; margin:0 auto; border:1px solid #EFEFEF; text-align: center; display: block;}
+.operateIn .main .in .inC .picList ul li .item .pic a.tp img{ display:inline-block; width:105px;}
+.operateIn .main .in .inC .picList ul li .item .pic .ti{ margin-top: 10px;}
+.operateIn .main .in .inC .picList ul li .item .pic .ti p{width:114px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.operateIn .main .in .inC .picList ul li .item .han{ margin-top: 15px; overflow:hidden; }
+.operateIn .main .in .inC .picList ul li .item .han .del{ background:url(../img/img-wash/del.png) no-repeat; width:18px; height:18px; background-size: contain; float:left; cursor:pointer;}
+.operateIn .main .in .inC .picList ul li .item .han i{width:19px; height:19px; background:url(../img/img-wash/no-check.png) no-repeat;  background-size: contain;float:right;cursor:pointer; }
+.operateIn .main .in .inC .picList ul li.checked .item .han i{ background-image:url(../img/img-wash/check.png);}
+.operateIn .main .in .inC .picList ul li .itemWrap{ position:absolute; left:0; top:0; z-index: 1; width:100%; height:100%; background-color: rgba(0,0,0,0.5); display:none;}
+.operateIn .main .in .inC .picList ul li .itemWrap .wrapIn{  padding:10px;}
+.operateIn .main .in .inC .picList ul li .itemWrap .wrapIn p{ color:#fff; text-align: center; margin-top: 50px;margin-bottom: 50px;}
+.operateIn .main .in .inC .picList ul li .itemWrap .wrapIn .judge span{ width:52px; height:24px; line-height:24px; text-align: center; color: #fff;cursor:pointer; display:inline-block; border-radius: 2px;}
+.operateIn .main .in .inC .picList ul li .itemWrap .wrapIn .judge .yes{ background-color: #EA2B6F;margin-right: 6px;}
+.operateIn .main .in .inC .picList ul li .itemWrap .wrapIn .judge .no{ background-color: #fff;color: #666;}
+
+.operateIn .main .in .tip{ position:absolute; left:0px; bottom:0px; font-size: 20px; color:#666;  width:100%; background-color:transparent; overflow:hidden;}
+.operateIn .main .in .tip p{ padding-left: 15px;height:50px; line-height: 50px;}
+.operateIn .main .in .tip i{ background:url(../img/img-wash/tip.png) no-repeat; background-size: contain; width:23px; height:23px; display:inline-block;vertical-align: middle; margin:0 4px;}
+.operateIn .main .in .inR{ width:340px;background-color:#ebebeb; position:fixed; right:20px; top:108px;}
+.operateIn .main .in .inR .rCon{ color:#000; height:80%; }
+.operateIn .main .in .inR .rCon .tit{ font-size: 20px; padding-top:15px; padding-left: 20px;}
+.operateIn .main .in .inR .rCon ul{padding-left: 20px; height:80%; overflow:auto; }
+.operateIn .main .in .inR .rCon ul li{ margin-top: 30px;}
+.operateIn .main .in .inR .rCon ul li .ti{ color:#270606; font-size: 16px; margin-bottom: 10px;}
+.operateIn .main .in .inR .rCon ul li p{ line-height: 40px; font-size: 14px;}
+.operateIn .main .in .inR .rCon ul li p span{ display:inline-block;}
+.operateIn .main .in .inR .rCon ul li p .sp1{ width:150px;}
+.operateIn .main .in .inR .rCon .count{ position:absolute; bottom:20px;  width:100%; height:110px; overflow:hidden;}
+.operateIn .main .in .inR .rCon .count p{ font-size: 20px; color:#000; margin-bottom: 30px; padding-left: 20px;}
+.operateIn .main .in .inR .rCon .count p span{ color:#f00;}
+.operateIn .main .in .inR .rCon .count input{ width:300px; margin:0 auto;display:block; height:45px; text-align:center;font-size: 20px; color:#fff; background-color: #ea2b6f; border-radius: 20px; cursor:pointer;}
+
+.popBg01{ position:fixed; left:0; top:0; z-index:99;width:100%; height:100%; background-color: rgba(0,0,0,0.5); overflow:hidden; display:none;}
+.popBg02{ position:fixed; left:0; top:0; z-index:100;width:100%; height:100%; background-color: rgba(0,0,0,0.5); overflow:hidden; display:none;}
+.com{ position:absolute; left:50%; margin-left: -285px; top:50%; width:570px; background-color: #fff;}
+.com.single{ margin-top: -248px;}
+.com.batch{ margin-top: -265px;}
+.com .sinIn .inHd{ position:relative;}
+.com .sinIn .inHd .tit{text-align: center; font-size:20px; color:#000; background-color: #ffd477;height:40px; line-height: 40px;  }
+.com .sinIn .inHd .close{ background:url(../img/img-wash/close.png); background-size: contain; width:22px; height:22px;position:absolute;right:15px; top:10px; cursor:pointer;}
+.com .sinIn .inMain{ padding:25px 20px; overflow:hidden;}
+.com .sinIn .inMain .maL{ width:210px; float:left;}
+.com .sinIn .inMain .maL .tp{ width:150px; height:150px; overflow:hidden; text-align: center; border: 1px solid #EFEFEF; display:inline-block;}
+.com .sinIn .inMain .maL .tp img{ display:inline-block; width:150px;}
+.com .sinIn .inMain .maR{ width:295px; float:right;}
+.com .sinIn .inMain .maR ul li .item{ padding:10px 0; border-bottom:1px solid #ccc; overflow:hidden;} 
+.com .sinIn .inMain .maR ul li .item .sp1{ float:left; margin-top: 6px;}
+.com .sinIn .inMain .maR ul li .item .han{ float:right;}
+.com .sinIn .inMain .maR ul li .item .han span{ width:30px; height:30px; float:left; cursor:pointer;}
+.com .sinIn .inMain .maR ul li .item .han .reduceBtn{ background: url(../img/img-wash/jian.png) no-repeat; background-size:cover;}
+.com .sinIn .inMain .maR ul li .item .han .addBtn{background: url(../img/img-wash/jia.png) no-repeat;background-size:cover; }
+.com .sinIn .inMain .maR ul li .item .han .inp{ width:52px; height:30px;background-color: #ccc; float:left;}
+.com .sinIn .inMain .maR ul li .item .han .inp input{ width:100%; height:28px;  margin-top: 1px;  text-align: center; background-color: #fff; color:#ea2b6f;}
+.com .sinIn .confirm{ margin-top: 70px; padding:20px;}
+.com .sinIn .confirm input{ width:100%; height:40px;text-align:center;font-size: 20px; color:#fff; background-color: #ea2b6f; border-radius: 20px; cursor:pointer; }
+.com.batch .inMain .ma{ margin:0 auto; float: none;}
+.com.batch .ti{ font-size: 14px; margin:15px 0 0 15px;}
+.com.batch .ti span{ color:#ea2b6f;}
+
+
+

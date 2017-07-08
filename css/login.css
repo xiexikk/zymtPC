@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+.logReg{ width:100%; overflow:hidden; height:560px; margin-bottom: 20px;}
+.logReg .logRegCon{ margin-top: 40px; overflow:hidden;}
+.logReg .logRegCon .conL{ width:520px; padding-left: 160px;}
+.logReg .logRegCon .conR{ width:320px; padding-left: 100px;}
+.logReg .logRegCon .logL{ margin-top: 20px;}
+.login .conL .tit{ position:relative; width:300px; height:30px; margin-left: 20px;}
+.login .conL .tit .line{ position:absolute; top:10px; width:300px; height:1px; background-color: #ccc;}
+.login .conL .tit h2 { width:100px; background-color: #fff; text-align: center; font-size: 20px; color:#000; font-weight: normal; position:absolute; top:-3px; left:50%; margin-left: -50px; }
+.login .conL .inp{ margin-top: 20px;}
+.logReg .logRegCon .inp .inpIn { margin-bottom: 20px;}
+.logReg .logRegCon .inpIn.mb0{ margin-bottom: 0;}
+.logReg .logRegCon .inp .inpIn .warn{ margin-left: 10px; color:#f00;}
+.login .logL .inp .inpIn input[type="text"],.login .logL .inp .inpIn input[type="password"]{  width:318px; height:28px; border:none; padding:10px; font-size: 18px;border-radius:6px; border:1px solid #ccc;}
+.login .logL .inp .inpIn input[type="text"]:focus,.login .logL .inp .inpIn input[type="password"]:focus{ border-color: #F06332;}
+.login .logL .forget{ text-align: right; line-height: 30px; width:340px;}
+.login .logL .forget a{color:#007dd2; } 
+.login .logL .forget a:hover{ text-decoration: underline;}
+.logRegCon .logBtn{ margin-top: 10px;}
+.logReg .logRegCon .logBtn input{  width:340px; height:50px; background-color: #f06332; border-radius: 8px; font-size: 20px; color:#fff; cursor:pointer;}
+.logReg .logRegCon .logR{ margin-top: 70px; }
+.logReg .logRegCon .conR .tit{ width:220px;}
+.logReg .logRegCon .conR .tit h3{ font-size: 14px; text-align: center; font-weight: normal;}
+.logReg .logRegCon .conR ul{ margin-top: 20px; overflow:hidden;}
+.logReg .logRegCon .conR ul li{ float:left; margin-right: 30px;}
+.logReg .logRegCon .conR ul li a{ display:block; text-align:center;}
+.logReg .logRegCon .conR ul li a span{ line-height: 28px; font-size: 14px;}
+.logReg .logRegCon .conR .newRegBtn{ margin-top: 50px; text-align: center; width:220px;}
+.logReg .logRegCon .conR .newRegBtn input{  width:158px; height:48px; line-height: 48px; color:#08c5b1; text-align: center; font-size: 14px; background-color: #fff; border: 1px solid #08c5b1; border-radius: 8px; cursor:pointer;}
+.register .regL .tit h2{ font-size:22px; color:#000; margin-right: 20px;display:inline-block;}
+.register .regL .tit p{ display:inline-block; font-size: 18px; color:#A5A5A5;}
+.register .regL .inp{ margin-top:40px;}
+.register .regL .inp .inpIn { position:relative;}
+.register .regL .inp .inpIn input[type="text"],.register .regL .inp .inpIn input[type="password"]{ width:248px; height:28px; padding:10px; font-size: 18px;border-radius:6px; border:1px solid #ccc; padding-left: 80px;}
+.register .regL .inp .inpIn input[type="text"]:focus,.register .regL .inp .inpIn input[type="password"]:focus{ border-color: #F06332;}
+.register .regL .inp .inpIn label{ position:absolute; left:0; top:0; line-height: 48px; font-size: 18px; color:#999; padding-left: 10px;}
+.register .regL .inp .inpIn .tip{ width: 120px; display:inline-block; margin-left: 10px;}
+.register .regL .inp .inpIn.verify input[type="text"]{ width:158px; padding-right: 100px;}
+.register .regL .inp .inpIn.verify{ position:relative; width:340px;}
+.register .regL .inp .inpIn.verify .get_code{ position:absolute; right:10px; top:10px; width:80px; height:30px; line-height: 30px; text-align: center; color:#fff; font-size: 12px;background-color: #08c5b1; border-radius: 4px; cursor:pointer; }
+.register .regL .inp .clause input{ margin-right:5px; cursor:pointer;}
+.register .regL .inp .clause span a:hover{ color:#db2868; text-decoration:underline;}
+.register .regL .regBtn{ margin-top:20px;}
+.register .regR{ margin-top: 40px;}
+.register .regR .logTip{ margin:80px 0; text-align:center; width:220px;}
+.register .regR .logTip h3{ font-size:16px; display:inline-block;}
+.register .regR .logTip .clickLog{ padding:7px 10px; background-color:#049BEF; border-radius:4px; font-size:16px; color:#fff;}
+
+.pwd .pwdCon .pwdL{ padding-left: 60px; }
+.pwd .pwdCon .pwdL .inp,.pwd .pwdCon .pwdL .nextBtn{ padding-left: 250px;}
+.pwd .pwdCon .pwdL .nextBtn{ margin-top: 30px;}
+.pwd .pwdCon .inp .inpIn.verify input[type="text"]{ width:138px; padding-right: 10px;}
+.pwd .pwdCon .inp .inpIn.verify .get_code{ position:static; height:46px; line-height: 46px; margin-left: 15px;}
+.pwd .restPwd .inp .inpIn input[type="password"]{ padding-left: 90px; width:238px;}
+
+.pwd .pwdCon .sucTip{ text-align: center; font-size: 35px; margin-top: 75px;}
+.pwd .pwdCon .sucTip i{ width:30px; height:30px; background-position: -90px -2px; margin-right: 5px;}

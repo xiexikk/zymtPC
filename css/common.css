@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+/*精灵图*/
+.iconSprite{ background:url(../img/Sprite/iconFamily.png) no-repeat; background-size: 500px 500px; display:inline-block;}
+/*翻页1 .2 .3 ~*/
+#pageGro{ overflow:hidden; margin-top:30px; float:right; }
+#pageGro.cb{ margin-right: 100px; }
+#pageGro.cb2{ margin-right: 0;}
+#pageGro div,#pageGro div ul li{font-size:12px; color:#999; line-height:23px; float:left; margin-left:5px;}
+#pageGro div ul li{ width:22px; text-align:center; border:1px solid #999; cursor:pointer;}
+#pageGro div ul li.on{ color:#fff; background:#EF2C71; border:1px solid #EF2C71;}
+#pageGro .pageUp,#pageGro .pageDown{padding:0 5px; border:1px solid #999; cursor:pointer;}
+
+/*顶部广告*/
+#topAdv{ width:100%; height:80px;  height:0;  position: relative; left: 0; top: 0;z-index: 9991;} 
+#topAdv a{ width:100%; height:100%; display: block; background-position: center top; position: relative; left: 0; top: 0;z-index: 9991;}
+#popAdv{ width: 100%; height: 600px; height:0; position: relative; left: 0; top: 0; z-index: 999;} 
+#popAdv a{ display: block;  width: 100%;  height: 100%; background-position: center top;position: relative; left: 0; top: 0; z-index: 999;}
+#popAdv i{ width: 34px; height: 34px; background: url("../img/img-index/close.png") no-repeat; position: absolute; right: 10px; top: 10px; cursor: pointer; display:none; }
+
+/*顶部导航*/
+#siteNav { width:100%; height:29px; line-height: 29px; background-color: #F5F5F5; border-bottom: 1px solid #eee;}
+#siteNav .navIn { height:29px;}
+#siteNav .navIn .inL .tit{ color:#ea3600; font-size: 14px; padding-left: 10px;}
+#siteNav .navIn .inR ul li{ float: left; margin-right: 5px;}
+#siteNav .navIn .inR ul li.noLog a{ padding: 0 2px; color: #333;}
+#siteNav .navIn .inR ul li a{ padding:0 10px; display:inline-block;}
+#siteNav .navIn .inR ul li a:hover{ color:#db2868;}
+#siteNav .navIn .inR ul li .txtLine{ font-style:normal; color:#d4d4d4;}
+#siteNav .navIn .inR ul li .reg{ color:#db2868; padding-right: 5px;}
+#siteNav .navIn .inR ul li.myPc a,#siteNav .navIn .inR ul li.myPrinted a,#siteNav .navIn .inR ul li.myTel a{}
+#siteNav .navIn .inR ul li a.tit{background:url(../img/img-index/line.png) no-repeat left 9px;padding:0 8px 0 11px;}
+#siteNav .navIn .inR ul li.myPc i,#siteNav .navIn .inR ul li.myTel i,#siteNav .navIn .inR ul li.myPrinted i{ margin: 0 5px; }
+#siteNav .navIn .inR ul li.myPc i.arrow,#siteNav .navIn .inR ul li.myPrinted i.arrow{ background-position: -1px -10px; width:10px; height:6px;}
+#siteNav .navIn .inR ul li.myTel i.tel{ background-position: -25px -10px; width: 16px; height:14px;}
+#siteNav .navIn .inR ul li.myPc{ position:relative;}
+#siteNav .navIn .inR ul li.myPc.cur a{ background-color: #fff; background-image: none; margin:0 -1px; border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
+#siteNav .navIn .inR ul li ol{overflow:hidden; position: absolute; left: -1px; z-index:66; background:#fff;  border:1px solid #ccc;border-top:none;}
+#siteNav .navIn .inR ul li.myPc ol.pcBot{ width:91px; display:none;}
+#siteNav .navIn .inR ul li.myPc ol.pcBot li{ width:100%; line-height: 30px; }
+#siteNav .navIn .inR ul li.myPc.cur ol.pcBot li a{ display:block; }
+#siteNav .navIn .inR ul li.myPc ol.pcBot li a:hover{ display:block; background-color:#F5F5F5;}
+#siteNav .navIn .inR ul li.myPrinted{ position:relative;}
+#siteNav .navIn .inR ul li.myPrinted.cur a{ background-color: #fff; background-image: none; margin:0 -1px; border-left: 1px solid #ccc;  border-right: 1px solid #ccc;}
+#siteNav .navIn .inR ul li.myPrinted.cur ol li a{ border:none;}
+#siteNav .navIn .inR ul li.myPrinted ol.priBot{ width:270px; padding:10px; display:none;} 
+#siteNav .navIn .inR ul li.myPrinted ol.priBot li{ float:left; text-align: center; margin-right: 0;}
+#siteNav .navIn .inR ul li.myPrinted ol.priBot li a{ width:70px; height:70px; display:inline-block;}
+#siteNav .navIn .inR ul li.myPrinted ol.priBot li a img{ width:100%; height:100%; display:block;}
+#siteNav .navIn .inR ul li.myTel span.tel{background-position: -25px -10px; width:16px; height:14px; margin-right: 10px;vertical-align: text-top;}
+#siteNav .navIn .inR ul li.myOrder em{ color:#db2868; }
+/*logo区*/
+#logoCon{ width:100%; height:100px; background-color: #fff;}
+#logoCon .conIn{overflow: hidden;}
+#logoCon .conIn .logo{ width:82px; height:82px; background:url(../img/img-index/logo.png) no-repeat; display:block; margin-top:9px; float:left;}
+#logoCon .conIn .logo a{ width:82px; height:0px; padding-top:82px; overflow:hidden; display:block;}
+#logoCon .conIn .adv{ background: url(../img/img-index/adv.png) no-repeat; width: 213px; height: 31px;margin-top: 50px; margin-left: 20px;}
+#logoCon .conIn .tel{ background: url(../img/img-index/telp.png)  no-repeat; width: 235px; height: 31px; margin-top: 35px;}
+    /*导航区*/
+#nav{ width:100%; height:40px; line-height: 40px; background-color: #ef2c71; z-index: 999;}
+#nav .navCon{ overflow:hidden;}
+#nav .navCon ul{overflow:hidden;}
+#nav .navCon ul li{ float:left;}
+#nav .navCon ul li a{ display:block; font-size:18px; color:#fff; padding: 0 28px;}
+#nav .navCon ul li a:hover,#nav .navCon ul li.cur a{ background-color:#CC0048;}
+
+/*服务*/
+#botSer{ overflow:hidden; margin-top: 50px;}
+#botSer ul{ overflow:hidden; padding:20px 0; }
+#botSer ul li{ float:left; margin:0 16px;}
+
+/*底部信息*/
+#footHandle{ width:100%; height:212px; background-color: #ebebeb; overflow:hidden; }
+#footHandle .handleCon{ padding:30px 0;}
+#footHandle .handleCon dl{ float:left; margin-right:100px;}
+#footHandle .handleCon dl dt{ color:#000; font-size: 20px; vertical-align: top; margin-bottom: 10px;}
+#footHandle .handleCon dl dt i{ margin-right: 15px; vertical-align: middle;}
+#footHandle .handleCon dl.dl01 dt i{ background-position: -310px -45px; width:26px; height:26px;}
+#footHandle .handleCon dl.dl02 dt i{ background-position: -350px -45px; width:34px; height:23px;}
+#footHandle .handleCon dl.dl03 dt i{ background-position: -390px -45px; width:31px; height:31px;}
+#footHandle .handleCon dl.dl04 dt i{ background-position: -430px -45px; width:31px; height:31px;}
+#footHandle .handleCon dl dd{ line-height: 22px; padding-left: 46px; }
+#footHandle .handleCon dl dd a{ color:#999;}
+#footHandle .handleCon dl dd a:hover{ text-decoration: underline; color:#000;}
+#footHandle .handleCon dl.dl04{ margin-right: 0;}
+#footHandle .handleCon dl.dl04 dd{ float:left; text-align: center;} 
+#footHandle .handleCon dl.dl04 dd img{ width: 63px; height:63px;}
+
+/*版权所有*/
+#footer{ width:100%; height:120px; background-color: #F9F9F9; border-top: 4px solid #ef2c71;}
+#footer .footerIn{ text-align: center; padding:30px;}
+#footer .footerIn p.p2{ margin-top: 5px;}
+#footer .footerIn p.p2 a:hover{ color:#000; text-decoration:underline;}
+#footer .footerIn ul{ overflow: hidden; display: inline-block; margin-top: 20px;}
+#footer .footerIn ul li{ float: left; margin: 0 5px;}
+#footer .footerIn ul li a{ display: inline-block;}
+
+/*悬浮登录,注册框*/
+#loginPop{width:440px;overflow:hidden;border:1px solid #ccc;background-color: #fff; box-shadow: 0 0 20px #A9A9A9;position:fixed;z-index:10000;top:50%; left:50%; margin-top: -190px; margin-left:-220px; display:none; }
+#loginPop .popIn{ overflow:hidden; position:relative;}
+#loginPop .popIn .close{ position:absolute; right:0px; top:0px; width:20px;height:20px; line-height: 20px; padding:5px; color:#000; text-align: center; cursor:pointer;}
+#loginPop .popIn .inHd{ height:50px; line-height: 50px; background-color: #fce0d6; padding:0 24px;}
+#loginPop .popIn .inHd h4{ font-size: 20px; color:#000;}
+#loginPop .popIn .inHd span{ margin-right: 10px;}
+#loginPop .popIn .inHd span a{ color:#f06332; font-size: 14px;}
+#loginPop .popIn .inHd span a:hover{ text-decoration: underline;}
+#loginPop .popIn .inMid{ padding:20px 10px 20px 50px;}
+#loginPop .popIn .inMid .inp{ margin-bottom: 15px;}
+#loginPop .popIn .inMid .inp.mb0{ margin-bottom: 0;}
+#loginPop .popIn .inMid .inp label{ font-size: 14px; color:#000; margin-right: 15px; width:45px; display:inline-block;}
+#loginPop .popIn .inMid .inp input{ width:152px; height:16px; line-height: 16px; border:1px solid #ccc; padding:10px;}
+#loginPop .popIn .inMid .inp .warnTip{ color:#ea2b6f; margin-left: 10px;}
+#loginPop .popIn .inMid .logBtn{margin-left: 60px;}
+#loginPop .popIn .inMid .logBtn input{ width:172px; height:36px; line-height: 36px; background-color: #f06332; color:#fff; font-size: 20px; text-align: center;}
+#loginPop .popIn .inMid .forget{ text-align: right; line-height: 30px; width:235px;}
+#loginPop .popIn .inMid .forget a{color:#007dd2; } 
+#loginPop .popIn .inMid .forget a:hover{ text-decoration: underline;}
+#loginPop .popIn .inBd{ padding:10px 50px ; text-align: center; overflow:hidden;}
+#loginPop .popIn .inBd ul{ margin-left: 60px; margin-top: 20px; overflow:hidden;}
+#loginPop .popIn .inBd ul li{ float:left; margin-right: 30px;}
+
+/*在线客服*/
+#online{ position: fixed; right: 0; top: 50%; margin-top: -138px; z-index: 999;}
+#online .in{ width: 140px; padding: 5px; background-color: #d70d55; border-radius: 4px 0 0 4px; position: relative; box-shadow: 0 0 10px rgb(138, 138, 138);}
+#online .in .hd{ font-size: 16px; color: #fff; text-align: center;  height: 50px; line-height: 50px;}
+#online .in .qq{ width: 100%; height: 57px; line-height: 57px; background-color: #fff; font-size: 14px; color: #666; text-align: center;}
+#online .in .qq a{ display: block;}
+#online .in .qq a i,#online .in .qq a span{  display: inline-block;}
+#online .in .qq a i{ width: 27px; height: 27px; background: url("../img/img-index/qqIco.png") no-repeat; vertical-align: middle;}
+#online .in .qq a:hover i{ background-image: url("../img/img-index/qqIco2.png");}
+#online .in .qq a span{ margin-left: 10px;}
+#online .in .qq a:hover span{ color: #d70d55;}
+#online .in .wx{ height: 148px; background-color: #fff; font-size: 14px; color: #666; text-align: center; margin-top: 10px;}
+#online .in .wx span{ margin-top: 20px; display: inline-block;}
+#online .in .wx a{ width: 87px; height: 87px; display: inline-block; overflow: hidden; margin-top: 10px;}
+#online .in .wx a img{ width: 100%; display: inline-block;}
+#online .in i.arr{ width: 20px; height: 27px; background: url("../img/img-index/kfarr.png") no-repeat; background-position: left bottom; position: absolute; left: -22px; top:0; cursor: pointer; box-shadow: 0 0 2px rgb(138, 138, 138);}
+#online .in i.arr.cur{ background-position: left top;}
+
+
+#adSmall{ width: 100%; height:80px; }
+#adSmall a{ width:100%; height:80px; background-position: center top; background-size:cover; display: inline-block; }
+#adBig{ width:100%;}
+#adBig a{ width:100%; height:600px; background-position: center center; background-size:cover; display: inline-block;  }
+#adBig .close{ width: 34px; height: 34px; background: url("../img/img-index/close.png") no-repeat; position: absolute; right: 10px; top: 10px; cursor: pointer; }
+
+
+
+

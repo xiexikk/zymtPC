@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>指印美图商城</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/order.css">
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/order.js"></script>
+</head>
+
+<body>
+
+<!-- 顶部导航 -->
+<div id="siteNav">
+    <div class="navIn w1100 m0a">
+        <div class="inL fl">
+            <a href="index.html" class="tit">印了吗商城首页</a>
+        </div>
+        <div class="inR fr">
+            <ul>
+                <li class="noLog">
+                    <a href="javascript:;">hi,麦兜兜</a>
+                    <a href="javascript:;">退出</a>
+                </li>
+                <li class="regLog">
+                    <a href="../loginReg/register.html" class="reg"><span>注册</span></a>
+                    <a href="javascript:;" class="log"><span>登录</span></a>
+                </li>
+                <li class="myPc">
+                    <a href="../perCenter/my.html" class="tit">
+                        <span>我的账号</span>
+                        <i class="arrow iconSprite"></i>
+                    </a>
+                    <ol class="pcBot">
+                        <li><a href="../perCenter/my-message.html">我的消息</a></li>
+                        <li><a href="../perCenter/my-coupon.html">我的优惠劵</a></li>
+                        <li><a href="../perCenter/my-works.html">我的作品</a></li>
+                    </ol>
+                </li>
+                <li class="myPrinted">
+                    <a href="javascript:;" class="tit">
+                        <span>手机印制</span>
+                        <i class="arrow iconSprite"></i>
+                    </a>
+                    <ol class="priBot">
+                        <li><a href="javascript:;" title="android下载"><img src="img/img-index/ewm.png"><span>android</span></a></li>
+                        <li><a href="javascript:;" title="ios下载"><img src="img/img-index/ewm.png"><span>ios</span></a></li>
+                        <li><a href="javascript:;" title="iPad下载"><img src="img/img-index/ewm.png"><span>iPad</span></a></li>
+                    </ol>
+                </li>
+                <li class="myOrder">
+                    <a href="javascript:;" class="tit">
+                        <span>我的订单（<em>3</em>）</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- logo区 -->
+<div id="logoCon">
+    <div class="conIn w1100 m0a">
+        <div class="logo fl">
+            <h1><a href="index.html" title="印了吗">印了吗</a></h1>
+        </div>
+        <div class="adv fl"></div>
+        <div class="tel fr"></div>
+    </div>
+</div>
+
+<!-- 导航区 -->
+<div id="nav">
+    <div class="navCon w1100 m0a">
+        <ul>
+            <li><a href="../index.html">首页</a></li>            
+            <li><a href="../photoAlbum/photoAlbum.html">儿童相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">旅游相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">聚会相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">毕业册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">台历</a></li>
+            <li><a href="../washPhoto/wash.html">冲洗相册</a></li>
+            <li><a href="../activity/actList.html">活动专区</a></li>          
+        </ul>
+    </div>
+</div>
+
+<!-- 支付 -->
+<div id="orderCom">
+    <div class="comIn w1100 m0a">
+        <div class="hd">
+            <ol>
+                <li>
+                    <span class="ico iconSprite ico1"></span>
+                    <p class="txt" style="color:#08c5b1; ">
+                        <span>第一步</span>
+                        <span>填写收货信息</span>
+                    </p>
+                    <i class="iconSprite next"></i>
+                </li>
+                <li>
+                    <span class="ico iconSprite ico4"></span>
+                    <p class="txt" style="color:#08c5b1;">
+                        <span>第二步</span>
+                        <span>支付</span>
+                    </p>
+                    <i class="iconSprite"></i>
+                </li>
+                <li>
+                    <span class="ico iconSprite ico3"></span>
+                    <p class="txt">
+                        <span>第三步</span>
+                        <span>等待发货</span>
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <div class="ordTxt">
+            <h5>您的订单</h5>
+            <p>美美啦啦相册01</p>
+            <p>美美啦啦相册02</p>
+            <p class="price"><span>￥184.0</span></p>
+        </div>
+        <div class="payType">
+            <div class="tit">
+                <h5>选择支付方式</h5>
+            </div>
+            <ul class="payList">
+                <li class="item bn cur">
+                    <i class="iconSprite"></i>
+                    <a href="javascript:;"><img src="../img/img-order/pay01.png"></a>
+                </li>
+                <li class="item bn">
+                    <i class="iconSprite"></i>
+                    <a href="javascript:;"><img src="../img/img-order/pay02.png"></a>
+                </li>
+                <li class="item">
+                    <i class="iconSprite"></i>
+                    <a href="javascript:;"><img src="../img/img-order/pay03.png"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="payGo">
+            <p><span>实付款：</span><span style="color:#f06332; font-size:20px;">￥184.0</span></p>
+            <div class="subBtn">
+                <input type="submit" value="去支付" onclick='window.open("sucOrder.html")'>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 服务 -->
+<div id="botSer" class="w1100 m0a">
+    <ul>
+        <li><a href="javascript:;"><img src="../img/img-index/ser01.png"></a></li>
+        <li><a href="javascript:;"><img src="../img/img-index/ser02.png"></a></li>
+        <li><a href="javascript:;"><img src="../img/img-index/ser03.png"></a></li>
+    </ul>
+</div>
+
+<!-- 底部信息 -->
+<div id="footHandle">
+    <div class="handleCon w1100 m0a">
+        <dl class="dl01">
+            <dt><i class="iconSprite"></i>常见问题</dt>
+            <dd><a href="javascript:;">什么是CMRK印刷模式</a></dd>
+            <dd><a href="javascript:;">冲印小常识</a></dd>     
+            <dd><a href="javascript:;">照片保存期说明</a></dd>  
+            <dd><a href="javascript:;">印制流程</a></dd>       
+        </dl>
+        <dl class="dl02">
+            <dt><i class="iconSprite"></i>配送及支付</dt>
+            <dd><a href="javascript:;">配送时间及费用</a></dd>
+            <dd><a href="javascript:;">支付方式</a></dd>       
+        </dl>
+        <dl class="dl03">
+            <dt><i class="iconSprite"></i>关于我们</dt>
+            <dd><a href="javascript:;">联系我们</a></dd>
+            <dd><a href="javascript:;">品牌故事</a></dd>
+            <dd><a href="javascript:;">招贤纳士</a></dd>       
+        </dl>
+        <dl class="dl04">
+            <dt><i class="iconSprite"></i>手机冲印</dt>
+            <dd><a href="javascript:;" title="android下载"><img src="../img/img-index/ewm.png"><span>android下载</span></a></dd>
+            <dd><a href="javascript:;" title="ios下载"><img src="../img/img-index/ewm.png"><span>ios下载</span></a></dd> 
+            <dd><a href="javascript:;" title="iPad下载"><img src="../img/img-index/ewm.png"><span>iPad下载</span></a></dd>           
+        </dl>
+    </div>
+</div>
+
+<!-- 版权所有 -->
+<div id="footer">
+    <div class="footerIn w1100 m0a">
+        <p class="p1">广州指印数码科技有限公司</p>
+        <p class="p2">Copyright 2010-2016 All Rights Reserved. <a href="http://www.miitbeian.gov.cn">粤ICP备16046154号</a></p>
+    </div>
+</div>
+
+</body>
+</html>

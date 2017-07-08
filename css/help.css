@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+.helpCom{ margin-top: 30px; overflow:hidden;}
+.helpCom .conIn .inL{ width: 200px;}
+.helpCom .conIn .inL .lcon{ margin-bottom: 15px; padding-bottom: 10px; border-radius: 8px; overflow:hidden; border:1px solid #e3e5e5;}
+.helpCom .conIn .inL .lcon .tit{ height: 50px; line-height: 50px; background-color: #e3e5e5;color: #170d09; font-size: 20px;}
+.helpCom .conIn .inL .lcon .tit i{ background-position: -7px -110px; width:3px; height:17px; display:inline-block; margin:0 10px;}
+.helpCom .conIn .inL .lcon .parItem{ margin:0 10px;}
+.helpCom .conIn .inL .lcon .parItem .item h3{ line-height: 40px; border-bottom:1px solid #ccc;}
+.helpCom .conIn .inL .lcon .parItem .item.boN h3{ border-bottom-color: transparent;}
+.helpCom .conIn .inL .lcon .parItem .item a{ display:block; font-size: 14px; }
+.helpCom .conIn .inL .lcon .parItem .item i{ width: 12px; height: 12px;padding-right: 5px; display:inline-block; cursor:pointer;}
+.helpCom .conIn .inL .lcon .parItem .item i{background-position:-25px -115px;}
+.helpCom .conIn .inL .lcon .parItem .item.open i{background-position:-45px -115px;}
+.helpCom .conIn .inL .lcon .parItem .item .chiItem{ display:none;}
+.helpCom .conIn .inL .lcon .parItem .item.open .chiItem{ display:block;}
+.helpCom .conIn .inL .lcon .parItem .item .chiItem{ margin-top: 15px;}
+.helpCom .conIn .inL .lcon .parItem .item .chiItem .item a{ font-size: 12px; color:#666; line-height: 22px; padding-left: 15px;}
+.helpCom .conIn .inL .lcon .parItem .item .chiItem .item a:hover{ text-decoration: underline; color:#ef2c71;}
+.helpCom .conIn .inL .lcon2 .parItem .item i{width:11px; height:12px; background-position:-70px -115px; }
+.helpCom .conIn .inL .lcon2 .parItem .item.open i{ background-position: -85px -115px;}
+.helpCom .conIn .inR{ margin-left: 30px; width:870px;}
+.helpCom .conIn .inR .rCon{ overflow:hidden;}
+.helpCom .conIn .inR .rCon .hdTit{font-size: 16px;}
+
+.helpCom .conIn .inR .rCon .hdTit a:hover{ text-decoration: underline;}
+.helpCom .conIn .inR .rCon .hdTit .arrow{ background-position: -4px -90px;width: 8px;height: 9px; margin: 0 5px;}
+.helpCom .conIn .inR .rCon .hdTit .arrow2{ background-position: -20px -90px;}
+
+.pageCom{ overflow: hidden; margin-top: 15px;}
+.pageCom ul{ overflow:hidden;}
+.pageCom ul li{ overflow:hidden;}
+.pageCom ul li .tit{ height: 50px; line-height: 50px; background-color: #e3e5e5;font-size: 14px; color:#232323; padding-left: 20px; border-radius: 8px 8px 0 0;}
+.pageCom ul li .in{ padding:15px 20px; border:1px solid #e3e5e5; border-top:0;border-radius: 0 0 8px 8px ;}
+.pageCom ul li .in p{ line-height: 28px; font-size: 14px; text-indent: 2em;}
+.pageCom ul li .bd{ margin: 20px 0 40px;}
+.pageCom ul li .bd span{display:block;}
+.pageCom ul li .bd a {line-height: 24px;color:#232323;}
+.pageCom ul li .bd a:hover{ text-decoration: underline; color:#ef2c71;}

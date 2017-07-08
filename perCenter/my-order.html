@@ -1,0 +1,786 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>印了吗商城</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/my.css">
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/my.js"></script>
+</head>
+
+<body>
+
+<!-- 顶部导航 -->
+<div id="siteNav">
+    <div class="navIn w1100 m0a">
+        <div class="inL fl">
+            <a href="index.html" class="tit">印了吗商城首页</a>
+        </div>
+        <div class="inR fr">
+            <ul>
+                <li class="noLog">
+                    <a href="javascript:;">hi,麦兜兜</a>
+                    <a href="javascript:;">退出</a>
+                </li>
+                <li class="regLog">
+                    <a href="../loginReg/register.html" class="reg"><span>注册</span></a>
+                    <a href="javascript:;" class="log"><span>登录</span></a>
+                </li>
+                <li class="myPc">
+                    <a href="../perCenter/my.html" class="tit">
+                        <span>我的账号</span>
+                        <i class="arrow iconSprite"></i>
+                    </a>
+                    <ol class="pcBot">
+                        <li><a href="../perCenter/my-message.html">我的消息</a></li>
+                        <li><a href="../perCenter/my-coupon.html">我的优惠劵</a></li>
+                        <li><a href="../perCenter/my-works.html">我的作品</a></li>
+                    </ol>
+                </li>
+                <li class="myPrinted">
+                    <a href="javascript:;" class="tit">
+                        <span>手机印制</span>
+                        <i class="arrow iconSprite"></i>
+                    </a>
+                    <ol class="priBot">
+                        <li><a href="javascript:;" title="android下载"><img src="img/img-index/ewm.png"><span>android</span></a></li>
+                        <li><a href="javascript:;" title="ios下载"><img src="img/img-index/ewm.png"><span>ios</span></a></li>
+                        <li><a href="javascript:;" title="iPad下载"><img src="img/img-index/ewm.png"><span>iPad</span></a></li>
+                    </ol>
+                </li>
+                <li class="myOrder">
+                    <a href="javascript:;" class="tit">
+                        <span>我的订单（<em>3</em>）</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- logo区 -->
+<div id="logoCon">
+    <div class="conIn w1100 m0a">
+        <div class="logo fl">
+            <h1><a href="index.html" title="印了吗">印了吗</a></h1>
+        </div>
+        <div class="adv fl"></div>
+        <div class="tel fr"></div>
+    </div>
+</div>
+
+<!-- 导航区 -->
+<div id="nav">
+    <div class="navCon w1100 m0a">
+        <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">儿童相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">旅游相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">聚会相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">毕业册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">台历</a></li>
+            <li><a href="../washPhoto/wash.html">冲洗相册</a></li>
+            <li><a href="../activity/actList.html">活动专区</a></li>          
+        </ul>
+    </div>
+</div>
+
+<!-- 我的账号-我的订单 -->
+<div id="myCom">
+    <div class="comIn w1100 m0a">
+        <div class="inL fl odrL">
+            <div class="lcon">
+                <h5 class="tit">交易管理</h5>
+                <ul>
+                    <li class="cur"><a href="my-order.html">我的订单</a></li>
+                    <li><a href="my-works.html">我的作品</a></li>
+                </ul>
+            </div>
+            <div class="lcon">
+                <h5 class="tit">账户管理</h5>
+                <ul>
+                    <li><a href="my-coupon.html">优惠劵</a></li>
+                    <li><a href="my-message.html">我的消息</a></li>
+                    <li><a href="my-portrait.html">头像和昵称</a></li>
+                    <li><a href="my-address.html">收货地址</a></li>
+                </ul>
+            </div>
+            <div class="lcon">
+                <h5 class="tit">安全管理</h5>
+                <ul>                    
+                    <li><a href="my-chgPwd.html">修改密码</a></li>
+                </ul>
+            </div>
+            <div class="lcon">
+                <h5 class="tit">反馈咨询</h5>
+                <ul>                    
+                    <li><a href="my-feedback.html">意见反馈</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="inR fl">
+            <div class="rCon">
+                <div class="hdTit">
+                    <p><a href="javascript:;" style="color:#ef2c71">我的账号</a><i class="arrow arrow2 iconSprite"></i><a href="javascript:;" style="color:#ef2c71">交易管理</a><i class="arrow arrow2 iconSprite"></i><a href="javascript:;">我的订单</a></p>
+                </div>
+                <div class="mainCon ordR">
+                    <div class="tabHd">
+                        <ol>
+                            <li class="cur">
+                                <a href="javascript:;"><span>全部</span>(<em>12</em>)</a><i class="arrBot iconSprite"></i>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><span>待付款</span>(<em>2</em>)</a><i class="arrBot iconSprite"></i>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><span>制作中</span>(<em>5</em>)</a><i class="arrBot iconSprite"></i>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><span>已发货</span>(<em>1</em>)</a><i class="arrBot iconSprite"></i>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><span>已收货</span>(<em>4</em>)</a><i class="arrBot iconSprite"></i>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="tabBd">
+                        <ul>
+                           <li>
+                               <div class="com">
+                                   <div class="comTit">
+                                        <span class="tit01">商品</span>
+                                        <span class="tit02">下单金额</span>
+                                        <span class="tit03">数量</span>
+                                        <span class="tit04">订单状态</span>
+                                        <span class="tit05">操作</span>
+                                   </div>
+                               </div>
+                           </li> 
+                        </ul>
+                    </div>
+                    <div class="listCon">
+                       <ul>
+                           <li class="allList">
+                                <div class="listItem waitPay">
+                                   <div class="hd">
+                                       <span class="time">2016.04.05</span>
+                                       <span class="ordNum">订单号：20160405123</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p01.jpg"></a>
+                                           <p class="fl"><span class="sp01">至美一拍</span><span class="sp02">24p 台历</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥68.5</span>
+                                           <del>￥188.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>待付款</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="ordCancel">取消订单</a>
+                                           </p>
+                                           <a href="../proOrder/confirmOrder.html" class="btn fl"><span>付款</span></a>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="listItem making">
+                                   <div class="hd">
+                                       <span class="time">2016.04.02</span>
+                                       <span class="ordNum">订单号：20160402126</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p02.jpg"></a>
+                                           <p class="fl"><span class="sp01">美丽瞬间</span><span class="sp02">28p 儿童相册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥88.0</span>
+                                           <del>￥222.0</del>
+                                           <span class="sp02">（含运费0元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>制作中</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                           </p>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="listItem delivered">
+                                   <div class="hd">
+                                       <span class="time">2016.04.01</span>
+                                       <span class="ordNum">订单号：20160401123</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p03.jpg"></a>
+                                           <p class="fl"><span class="sp01">至美一拍</span><span class="sp02">24p 毕业册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥68.5</span>
+                                           <del>￥188.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>已发货</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="chatLogistics">查看物流</a>
+                                           </p>
+                                           <a href="javascript:;" class="btn fl"><span>确认收货</span></a>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="listItem got NoEvaluate">
+                                   <div class="hd">
+                                       <span class="time">2016.03.22</span>
+                                       <span class="ordNum">订单号：20160322144</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p04.jpg"></a>
+                                           <p class="fl"><span class="sp01">致青春</span><span class="sp02">48p 毕业册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥108.0</span>
+                                           <del>￥258.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>已收货</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="ordDel">删除订单</a>
+                                                <a href="my-evaluation.html" class="estimate" style="color:#ef2c71;">评价</a>
+                                           </p>
+                                           <a href="javascript:;" class="btn fl"><span>再次购买</span></a>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="listItem got evaluated">
+                                   <div class="hd">
+                                       <span class="time">2016.03.21</span>
+                                       <span class="ordNum">订单号：20160321145</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p05.jpg"></a>
+                                           <p class="fl"><span class="sp01">美丽说</span><span class="sp02">36p 台历</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥75.0</span>
+                                           <del>￥155.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>已收货</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="ordDel">删除订单</a>
+                                                <a href="javascript:;" class="estimated" style="color:#ef2c71;">已评价</a>
+                                           </p>
+                                           <a href="javascript:;" class="btn fl"><span>再次购买</span></a>
+                                       </div>
+                                    </div>
+                                </div>                                                               
+                           </li>
+                           <li class="waitPayList">
+                                <div class="listItem waitPay">
+                                   <div class="hd">
+                                       <span class="time">2016.04.05</span>
+                                       <span class="ordNum">订单号：20160405123</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p01.jpg"></a>
+                                           <p class="fl"><span class="sp01">至美一拍</span><span class="sp02">24p 台历</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥68.5</span>
+                                           <del>￥188.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>待付款</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="ordCancel">取消订单</a>
+                                           </p>
+                                           <a href="../proOrder/confirmOrder.html" class="btn fl"><span>付款</span></a>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="listItem waitPay">
+                                   <div class="hd">
+                                       <span class="time">2016.04.05</span>
+                                       <span class="ordNum">订单号：20160405123</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p01.jpg"></a>
+                                           <p class="fl"><span class="sp01">至美一拍</span><span class="sp02">24p 台历</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥68.5</span>
+                                           <del>￥188.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>待付款</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="ordCancel">取消订单</a>
+                                           </p>
+                                           <a href="../proOrder/confirmOrder.html" class="btn fl"><span>付款</span></a>
+                                       </div>
+                                   </div>
+                                </div>
+                           </li>
+                           <li class="makingList">
+                                <div class="listItem making">
+                                   <div class="hd">
+                                       <span class="time">2016.04.02</span>
+                                       <span class="ordNum">订单号：20160402126</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p02.jpg"></a>
+                                           <p class="fl"><span class="sp01">美丽瞬间</span><span class="sp02">28p 儿童相册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥88.0</span>
+                                           <del>￥222.0</del>
+                                           <span class="sp02">（含运费0元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>制作中</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                           </p>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="listItem making">
+                                   <div class="hd">
+                                       <span class="time">2016.04.02</span>
+                                       <span class="ordNum">订单号：20160402126</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p02.jpg"></a>
+                                           <p class="fl"><span class="sp01">美丽瞬间</span><span class="sp02">28p 儿童相册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥88.0</span>
+                                           <del>￥222.0</del>
+                                           <span class="sp02">（含运费0元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>制作中</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                           </p>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="listItem making">
+                                   <div class="hd">
+                                       <span class="time">2016.04.02</span>
+                                       <span class="ordNum">订单号：20160402126</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p02.jpg"></a>
+                                           <p class="fl"><span class="sp01">美丽瞬间</span><span class="sp02">28p 儿童相册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥88.0</span>
+                                           <del>￥222.0</del>
+                                           <span class="sp02">（含运费0元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>制作中</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                           </p>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="listItem making">
+                                   <div class="hd">
+                                       <span class="time">2016.04.02</span>
+                                       <span class="ordNum">订单号：20160402126</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p02.jpg"></a>
+                                           <p class="fl"><span class="sp01">美丽瞬间</span><span class="sp02">28p 儿童相册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥88.0</span>
+                                           <del>￥222.0</del>
+                                           <span class="sp02">（含运费0元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>制作中</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                           </p>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="listItem making">
+                                   <div class="hd">
+                                       <span class="time">2016.04.02</span>
+                                       <span class="ordNum">订单号：20160402126</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p02.jpg"></a>
+                                           <p class="fl"><span class="sp01">美丽瞬间</span><span class="sp02">28p 儿童相册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥88.0</span>
+                                           <del>￥222.0</del>
+                                           <span class="sp02">（含运费0元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>制作中</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                           </p>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="listItem making">
+                                   <div class="hd">
+                                       <span class="time">2016.04.02</span>
+                                       <span class="ordNum">订单号：20160402126</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p02.jpg"></a>
+                                           <p class="fl"><span class="sp01">美丽瞬间</span><span class="sp02">28p 儿童相册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥88.0</span>
+                                           <del>￥222.0</del>
+                                           <span class="sp02">（含运费0元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>制作中</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                           </p>
+                                       </div>
+                                   </div>
+                                </div>
+                           </li>
+                           <li class="deliveredList">
+                               <div class="listItem delivered">
+                                   <div class="hd">
+                                       <span class="time">2016.04.01</span>
+                                       <span class="ordNum">订单号：20160401123</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p03.jpg"></a>
+                                           <p class="fl"><span class="sp01">至美一拍</span><span class="sp02">24p 毕业册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥68.5</span>
+                                           <del>￥188.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>已发货</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="chatLogistics">查看物流</a>
+                                           </p>
+                                           <a href="javascript:;" class="btn fl"><span>确认收货</span></a>
+                                       </div>
+                                   </div>
+                                </div>
+                           </li>
+                           <li class="gotList">
+                                <div class="listItem got NoEvaluate">
+                                   <div class="hd">
+                                       <span class="time">2016.03.22</span>
+                                       <span class="ordNum">订单号：20160322144</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p04.jpg"></a>
+                                           <p class="fl"><span class="sp01">致青春</span><span class="sp02">48p 毕业册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥108.0</span>
+                                           <del>￥258.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>已收货</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="ordDel">删除订单</a>
+                                                <a href="my-evaluation.html" class="estimate" style="color:#ef2c71;">评价</a>
+                                           </p>
+                                           <a href="javascript:;" class="btn fl"><span>再次购买</span></a>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="listItem got NoEvaluate">
+                                   <div class="hd">
+                                       <span class="time">2016.03.22</span>
+                                       <span class="ordNum">订单号：20160322144</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p04.jpg"></a>
+                                           <p class="fl"><span class="sp01">致青春</span><span class="sp02">48p 毕业册</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥108.0</span>
+                                           <del>￥258.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>已收货</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="ordDel">删除订单</a>
+                                                <a href="my-evaluation.html" class="estimate" style="color:#ef2c71;">评价</a>
+                                           </p>
+                                           <a href="javascript:;" class="btn fl"><span>再次购买</span></a>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="listItem got evaluated">
+                                   <div class="hd">
+                                       <span class="time">2016.03.21</span>
+                                       <span class="ordNum">订单号：20160321145</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p05.jpg"></a>
+                                           <p class="fl"><span class="sp01">美丽说</span><span class="sp02">36p 台历</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥75.0</span>
+                                           <del>￥155.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>已收货</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="ordDel">删除订单</a>
+                                                <a href="javascript:;" class="estimated" style="color:#ef2c71;">已评价</a>
+                                           </p>
+                                           <a href="javascript:;" class="btn fl"><span>再次购买</span></a>
+                                       </div>
+                                    </div>
+                                </div>   
+                                <div class="listItem got evaluated">
+                                   <div class="hd">
+                                       <span class="time">2016.03.21</span>
+                                       <span class="ordNum">订单号：20160321145</span>
+                                   </div>
+                                   <div class="bd">
+                                       <div class="con01 fl">
+                                           <a href="javascript:;" class="fl"><img src="../img/img-my/p05.jpg"></a>
+                                           <p class="fl"><span class="sp01">美丽说</span><span class="sp02">36p 台历</span></p>
+                                       </div>
+                                       <div class="con02 fl">
+                                           <span class="sp01">￥75.0</span>
+                                           <del>￥155.0</del>
+                                           <span class="sp02">（含运费5元）</span>
+                                       </div>
+                                       <div class="con03 fl">
+                                           <span>1</span>
+                                       </div>
+                                       <div class="con04 fl">
+                                           <span>已收货</span>
+                                       </div>
+                                       <div class="con05 fl">
+                                           <p class="fl"> 
+                                                <a href="my-orderDetails.html" class="ordDetails">订单详情</a>
+                                                <a href="javascript:;" class="ordDel">删除订单</a>
+                                                <a class="javascript:;" class="estimated" style="color:#ef2c71;">已评价</a>
+                                           </p>
+                                           <a href="javascript:;" class="btn fl"><span>再次购买</span></a>
+                                       </div>
+                                    </div>
+                                </div>     
+                           </li>
+                       </ul> 
+                    </div>
+
+                    <div class="pages">
+                        <div id="Pagination"></div>
+                        <div class="searchPage">
+                          <span class="page-sum">共<em class="allPage">3</em>页</span>
+                          <span class="page-go">跳转<input type="text">页</span>
+                          <a href="javascript:;" class="page-btn">GO</a>
+                        </div>
+                    </div>
+                    <script src="../js/jquery.pagination.js"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                            $("#Pagination").pagination("3");
+                        });
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 服务    -->
+<div id="botSer" class="w1100 m0a">
+    <ul>
+        <li><a href="javascript:;"><img src="../img/img-index/ser01.png"></a></li>
+        <li><a href="javascript:;"><img src="../img/img-index/ser02.png"></a></li>
+        <li><a href="javascript:;"><img src="../img/img-index/ser03.png"></a></li>
+    </ul>
+</div>
+
+<!-- 底部信息 -->
+<div id="footHandle">
+    <div class="handleCon w1100 m0a">
+        <dl class="dl01">
+            <dt><i class="iconSprite"></i>帮助中心</dt>
+            <dd><a href="../helpCenter/help.html">在线客服</a></dd>
+            <dd><a href="../helpCenter/help.html">找回密码</a></dd>
+            <dd><a href="../helpCenter/help.html">隐私说明</a></dd>
+        </dl>
+        <dl class="dl02">
+            <dt><i class="iconSprite"></i>配送及支付</dt>
+            <dd><a href="../helpCenter/help.html">配送时间及费用</a></dd>
+            <dd><a href="../helpCenter/help.html">支付方式</a></dd>
+            <dd><a href="../helpCenter/help.html">快递查询</a></dd>
+        </dl>
+        <dl class="dl03">
+            <dt><i class="iconSprite"></i>关于我们</dt>
+            <dd><a href="../helpCenter/help.html">联系我们</a></dd>
+            <dd><a href="../helpCenter/help.html">品牌故事</a></dd>
+            <dd><a href="../helpCenter/help.html">招贤纳士</a></dd>
+        </dl>
+        <dl class="dl04">
+            <dt><i class="iconSprite"></i>手机冲印</dt>
+            <dd><a href="javascript:;" title="android下载"><img src="../img/img-index/ewm.png"><span>android下载</span></a></dd>
+            <dd><a href="javascript:;" title="ios下载"><img src="../img/img-index/ewm.png"><span>ios下载</span></a></dd>
+            <dd><a href="javascript:;" title="iPad下载"><img src="../img/img-index/ewm.png"><span>iPad下载</span></a></dd>
+        </dl>
+    </div>
+</div>
+
+<!-- 版权所有 -->
+<div id="footer">
+    <div class="footerIn w1100 m0a">
+        <p class="p1">广州指印数码科技有限公司</p>
+        <p class="p2">Copyright 2010-2016 All Rights Reserved. <a href="http://www.miitbeian.gov.cn">粤ICP备16046154号</a></p>
+        <ul>
+            <li><a href="javascript:;"><img src="../img/img-index/bott01.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott02.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott03.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott04.png"></a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

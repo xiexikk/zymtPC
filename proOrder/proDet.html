@@ -1,0 +1,907 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>印了吗商城</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/order.css">
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/order.js"></script>
+
+</head>
+
+<body>
+
+<!-- 顶部导航 -->
+<div id="siteNav">
+    <div class="navIn w1100 m0a">
+        <div class="inL fl">
+            <a href="index.html" class="tit">印了吗商城首页</a>
+        </div>
+        <div class="inR fr">
+            <ul>
+                <li class="noLog">
+                    <a href="javascript:;">hi,麦兜兜</a>
+                    <a href="javascript:;">退出</a>
+                </li>
+                <li class="regLog">
+                    <a href="../loginReg/register.html" class="reg"><span>注册</span></a>
+                    <a href="javascript:;" class="log"><span>登录</span></a>
+                </li>
+                <li class="myPc">
+                    <a href="../perCenter/my.html" class="tit">
+                        <span>我的账号</span>
+                        <i class="arrow iconSprite"></i>
+                    </a>
+                    <ol class="pcBot">
+                        <li><a href="../perCenter/my-message.html">我的消息</a></li>
+                        <li><a href="../perCenter/my-coupon.html">我的优惠劵</a></li>
+                        <li><a href="../perCenter/my-works.html">我的作品</a></li>
+                    </ol>
+                </li>
+                <li class="myPrinted">
+                    <a href="javascript:;" class="tit">
+                        <span>手机印制</span>
+                        <i class="arrow iconSprite"></i>
+                    </a>
+                    <ol class="priBot">
+                        <li><a href="javascript:;" title="android下载"><img src="../img/img-index/ewm.png"><span>android</span></a></li>
+                        <li><a href="javascript:;" title="ios下载"><img src="../img/img-index/ewm.png"><span>ios</span></a></li>
+                        <li><a href="javascript:;" title="iPad下载"><img src="../img/img-index/ewm.png"><span>iPad</span></a></li>
+                    </ol>
+                </li>
+                <li class="myOrder">
+                    <a href="javascript:;" class="tit">
+                        <span>我的订单（<em>3</em>）</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- logo区 -->
+<div id="logoCon">
+    <div class="conIn w1100 m0a">
+        <div class="logo fl">
+            <h1><a href="index.html" title="印了吗">印了吗</a></h1>
+        </div>
+        <div class="adv fl"></div>
+        <div class="tel fr"></div>
+    </div>
+</div>
+
+<!-- 导航区 -->
+<div id="nav">
+    <div class="navCon w1100 m0a">
+        <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">儿童相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">旅游相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">聚会相册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">毕业册</a></li>
+            <li><a href="../photoAlbum/photoAlbum.html">台历</a></li>
+            <li><a href="../washPhoto/wash.html">冲洗相册</a></li>
+            <li><a href="../activity/actList.html">活动专区</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- 商品详情页 -->
+<div id="proCom">
+    <div class="comIn w1100 m0a proIn">
+        <div class="proHd">
+            <div class="hdCon clearfix">
+                <div class="cPic fl">
+                    <div class="mainPic">
+                        <a href="javascript:;"><img src="../img/img-order/pr01.jpg"></a>
+                        <span class="zoom"></span>
+                        <div class="bigPic" style="background-image: url(../img/img-order/pr01.jpg)"></div>
+                    </div>
+                    <ol class="tbPic">
+                        <li class="cur">
+                            <a href="javascript:;"><img src="../img/img-order/pr01.jpg" ></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="../img/img-order/pr02.jpg" ></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="../img/img-order/pr03.jpg" ></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="../img/img-order/pr04.jpg" ></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="../img/img-order/pr05.jpg" ></a>
+                        </li>
+                    </ol>
+                    <script>
+                        $(function(){
+                            $('.tbPic li').hover(function() {
+                                $(this).addClass('cur').siblings().removeClass('cur');
+                                var curSrc  = $(this).find('img').attr('src');
+                                $('.mainPic').find('img').attr('src', curSrc);
+                                $('.bigPic').css("backgroundImage",'url('+curSrc+')');
+                                // Create new offscreen image to test
+                                // var screenImage = $(this).find('img');
+                                // var theImage = new Image();
+                                // theImage.src = screenImage.attr("src");
+                                //  Get accurate measurements from that.
+                                // var imageWidth = theImage.width;
+                                // var imageHeight = theImage.height;
+                                // $('.bigPic').css('backgroundSize', imageWidth);
+                            });
+
+                            var zoomWH = $('.zoom').width();
+                            var mainImgWH = $('.mainPic').width();
+                            $('.mainPic').mousemove(function(e) {
+								var curSrc  = $(this).find('img').attr('src');
+                                $('.mainPic').find('img').attr('src', curSrc);
+                                $('.bigPic').css("backgroundImage",'url('+curSrc+')');
+                                // 获取坐标值
+                                var mx = e.pageX - $(this).offset().left - zoomWH/2;
+                                var my = e.pageY - $(this).offset().top - zoomWH/2;
+                                if(mx<0){mx=0}
+                                if(my<0){my=0}
+                                if(mx>$(this).width()-zoomWH){
+                                    mx=$(this).width()-zoomWH;
+                                }
+                                if(my>$(this).height()-zoomWH){
+                                    my=$(this).height()-zoomWH;
+                                }
+                                // 把坐标值给到span，span实现移动
+                                $(this).children('.zoom').css({ left:mx,top:my }).fadeTo(0.5,1);
+
+                                var bili = 800/mainImgWH;
+                                var fangdax = -bili*mx;
+                                var fangday = -bili*my;
+                                // 图片移动其实就是控制背景定位
+                                $(this).children('.bigPic').show().css({'background-position':fangdax+'px '+fangday+'px'});
+                            });
+
+                            $('.mainPic').mouseleave(function(e) {
+                                //$(this).children().hide();
+                                $(this).children('.zoom').hide();
+                                $(this).children('.bigPic').hide();
+                            });
+                        })
+                    </script>
+                </div>
+                <div class="cTxt fl">
+                    <p class="tit">最难忘的青葱岁月-精美毕业纪念册-硬壳照片书24P</p>
+                    <p class="actTime"><em>限时特惠：</em><span>此商品正在促销，<strong id="timer">0小时0分0秒</strong>后结束，请尽快购买！</span></p>
+                    <div class="price">
+                        <span class="newP">￥28.0</span><span class="oldP">原价：<del>￥56.0</del></span>
+                    </div>
+                    <div class="sendAdd">
+                        <div class="df">
+                            <span class="met">配送至：</span>
+                            <div id="distpicker" style="display:inline-block;">
+                                <div class="form-group">
+                                    <div style="position: relative;">
+                                        <input id="city-picker3" class="form-control" readonly type="text" value="" data-toggle="city-picker">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 地区选择 -->
+                            <script src="../js/city-picker.data.js"></script>
+                            <script src="../js/city-picker02.js"></script>
+                        </div>
+                    </div>
+                    <div class="wl">
+                        <span>物流：</span><span>普通快递￥8，</span> <span>顺丰快递￥12</span>
+                    </div>
+                    <div class="countNum">
+                        <span class="ti">数量</span>
+                        <div class="han">
+                            <span class="iconSprite reduceBtn"></span>
+                            <div class="inp"><input type="text" value="1"></div>
+                            <span class="iconSprite addBtn"></span>
+                        </div>
+                        <span class="stock">库存60件</span>
+                    </div>
+                    <div class="btn">
+                        <a href="javascript:;" class="makBtn">在线印制</a>
+                        <a href="javascript:;" class="readBtn">预览</a>
+                    </div>
+                    <div class="care">
+                        <p>10231人关注了此商品</p>
+                        <div class="share">
+                            <a href="javascript:;" class="xl iconSprite"></a>
+                            <a href="javascript:;" class="wx iconSprite"></a>
+                            <a href="javascript:;" class="qq iconSprite"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="picScroll">
+            <div class="hd">
+                <h2>同风格模板</h2>
+            </div>
+            <div class="bd">
+                <a href="javascript:;" class="prev"></a>
+                <a href="javascript:;" class="next"></a>
+                <div class="scrollWrap">
+                    <ul class="picList">
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic01.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic02.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic03.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic04.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic05.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic06.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic07.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic08.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic09.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic10.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic05.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="pic">
+                                <img src="../img/img-order/spic04.jpg">
+                            </a>
+                            <div class="ti">
+                                <span>无味儿童刮画纸  纸册16k炫彩 绘画纸 1袋装10张</span>
+                            </div>
+                            <div class="price">
+                                <span class="special">¥18.8</span>
+                                <span class="original">¥25</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+        <script type="text/javascript">
+            jQuery(".picScroll").slide({ mainCell:".picList", effect:"left",vis:4, pnLoop:false, scroll:4, autoPage:true});
+        </script>
+        <div class="proDet">
+            <div class="detIn">
+                <div class="inL fl">
+                    <h5 class="tit">相关推荐</h5>
+                    <div class="proList">
+                        <ul>
+                           <li>
+                                <a href="proDet.html" class="pic">
+                                     <div class="tp">
+                                        <img src="../img/img-order/pp.png">
+                                    </div>
+                                </a>
+                                <div class="txt">
+                                    <span>亲亲我的宝贝</span>
+                                    <span class="price">￥88.0</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="proDet.html" class="pic">
+                                     <div class="tp">
+                                        <img src="../img/img-order/pp.png">
+                                    </div>
+                                </a>
+                                <div class="txt">
+                                    <span>亲亲我的宝贝</span>
+                                    <span class="price">￥88.0</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="proDet.html" class="pic">
+                                     <div class="tp">
+                                        <img src="../img/img-order/pp.png">
+                                    </div>
+                                </a>
+                                <div class="txt">
+                                    <span>亲亲我的宝贝</span>
+                                    <span class="price">￥88.0</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="proDet.html" class="pic">
+                                     <div class="tp">
+                                        <img src="../img/img-order/pp.png">
+                                    </div>
+                                </a>
+                                <div class="txt">
+                                    <span>亲亲我的宝贝</span>
+                                    <span class="price">￥88.0</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="proDet.html" class="pic">
+                                     <div class="tp">
+                                        <img src="../img/img-order/pp.png">
+                                    </div>
+                                </a>
+                                <div class="txt">
+                                    <span>亲亲我的宝贝</span>
+                                    <span class="price">￥88.0</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inR fl">
+                    <div class="tbHd">
+                        <ol>
+                            <li class="cur">
+                                <a href="javascript:;">商品详情</a>
+                            </li>
+                            <li >
+                                <a href="javascript:;">商品评论<em>1234</em></a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="tbCen">
+                        <div class="item" style="display:block;">
+                            <div class="attribu">
+                                <ul>
+                                    <li>
+                                        <div class="liL">
+                                            <span class="sp01">封面</span>
+                                            <span class="sp02">激光相纸+冷裱工艺，pvc黑色卡纸</span>
+                                        </div>
+                                        <div class="liR">
+                                            <span class="sp01">内页</span>
+                                            <span class="sp02">250克同班纸覆光膜</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="liL">
+                                            <span class="sp01">页数 </span>
+                                            <span class="sp02">24P</span>
+                                        </div>
+                                        <div class="liR">
+                                            <span class="sp01">尺寸 </span>
+                                            <span class="sp02">15 X20CM</span>
+                                        </div>
+                                    </li>
+                                    <li class="bd0">
+                                        <div class="liL">
+                                            <span class="sp01">装订方式 </span>
+                                            <span class="sp02">蝴蝶装</span>
+                                            <span class="sp03"><img src="../img/img-order/zdfs.png"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pic">
+                                <p><img src="../img/img-order/det01.png" ></p>
+                                <p><img src="../img/img-order/det02.png"></p>
+                            </div>
+                        </div>
+                        <div class="item" style="display:none;">
+                            <div class="rateTtoolbar">
+                                <span class="rateFilter">
+                                    <input type="radio" id="all" name="radioGroup" checked>
+                                    <label for="all">全部</label>
+                                    <input type="radio" id="all5" name="radioGroup">
+                                    <label for="all5">惊喜（10）</label>
+                                    <input type="radio" id="all4" name="radioGroup">
+                                    <label for="all4">满意（8）</label>
+                                    <input type="radio" id="all3" name="radioGroup">
+                                    <label for="all3">一般（2）</label>
+                                    <input type="radio" id="all2" name="radioGroup">
+                                    <label for="all2">不满（1）</label>
+                                    <input type="radio" id="all1" name="radioGroup">
+                                    <label for="all1">失望（1）</label>
+                                </span>
+                            </div>
+                            <div class="review">
+                                <ul>
+                                    <li class="list">
+                                        <div class="fromWhom">
+                                            <img src="../img/img-my/whom.png" >
+                                            <div class="userName">麦兜兜</div>
+                                            <div class="star">
+                                                <ol>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="whomTxt">
+                                            <div class="txt">收到超级惊喜，款式好看，金色好看上档次，自粘膜很厚，张贴起来不打皱，容易覆平，价格也不贵。我照片都是大六寸的，贴起来非常漂亮，而且送了好多小礼品，很贴心!以后还会购买!五星好评!
+                                            </div>
+                                            <div class="info">
+                                                <span class="date">2016年04月05日 09:03</span>
+                                                <span class="type">颜色分类：5寸200张小脚丫</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="fromWhom">
+                                            <img src="../img/img-my/whom.png">
+                                            <div class="userName">麦兜兜</div>
+                                            <div class="star">
+                                                <ol>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="whomTxt">
+                                            <div class="txt">给客服一个大写的赞，很热情认真的解答了问题，买到了合心意的相册。外壳是硬纸壳式的，正是我想要的那种，大小也合适，存放和携带都方便，图案也漂亮，简单可爱。
+                                            </div>
+                                            <div class="info">
+                                                <span class="date">2016年04月02日 10:10</span>
+                                                <span class="type">颜色分类：20寸50张小脚丫</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="fromWhom">
+                                            <img src="../img/img-my/whom.png" >
+                                            <div class="userName">麦兜兜</div>
+                                            <div class="star">
+                                                <ol>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="whomTxt">
+                                            <div class="txt">相册质量好的没话说，宣传一点没有假，个人觉得实物比图片更棒，喜欢的朋友赶紧下手吧
+                                            </div>
+                                            <div class="info">
+                                                <span class="date">2016年04月02日 10:10</span>
+                                                <span class="type">颜色分类：20寸50张小脚丫</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="fromWhom">
+                                            <img src="../img/img-my/whom.png">
+                                            <div class="userName">麦兜兜</div>
+                                            <div class="star">
+                                                <ol>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="whomTxt">
+                                            <div class="txt">毕竟便宜，没多好，6寸过胶还大很多，看到特不舒服，想丢掉的冲动。
+                                            </div>
+                                            <div class="info">
+                                                <span class="date">2016年04月01日 10:10</span>
+                                                <span class="type">颜色分类：20寸50张小脚丫</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="fromWhom">
+                                            <img src="../img/img-my/whom.png">
+                                            <div class="userName">麦兜兜</div>
+                                            <div class="star">
+                                                <ol>
+                                                    <li class="cur"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="whomTxt">
+                                            <div class="txt">真是人们说的一分价钱一分货，质量太差了，太忙了没怎么问，就下单了，今天收到货打开一看，都想退货，又嫌麻烦就算了，外面那个皮就是厚纸片。有潮气或者水就坏了
+                                            </div>
+                                            <div class="info">
+                                                <span class="date">2016年03月20日 22:25</span>
+                                                <span class="type">颜色分类：20寸50张小脚丫</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="fromWhom">
+                                            <img src="../img/img-my/whom.png">
+                                            <div class="userName">麦兜兜</div>
+                                            <div class="star">
+                                                <ol>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="whomTxt">
+                                            <div class="txt">收到超级惊喜，款式好看，金色好看上档次，自粘膜很厚，张贴起来不打皱，容易覆平，价格也不贵。我照片都是大六寸的，贴起来非常漂亮，而且送了好多小礼品，很贴心!以后还会购买!五星好评!
+                                            </div>
+                                            <div class="info">
+                                                <span class="date">2016年04月05日 09:03</span>
+                                                <span class="type">颜色分类：5寸200张小脚丫</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="fromWhom">
+                                            <img src="../img/img-my/whom.png">
+                                            <div class="userName">麦兜兜</div>
+                                            <div class="star">
+                                                <ol>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="whomTxt">
+                                            <div class="txt">给客服一个大写的赞，很热情认真的解答了问题，买到了合心意的相册。外壳是硬纸壳式的，正是我想要的那种，大小也合适，存放和携带都方便，图案也漂亮，简单可爱。
+                                            </div>
+                                            <div class="info">
+                                                <span class="date">2016年04月02日 10:10</span>
+                                                <span class="type">颜色分类：20寸50张小脚丫</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="fromWhom">
+                                            <img src="../img/img-my/whom.png">
+                                            <div class="userName">麦兜兜</div>
+                                            <div class="star">
+                                                <ol>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="whomTxt">
+                                            <div class="txt">相册质量好的没话说，宣传一点没有假，个人觉得实物比图片更棒，喜欢的朋友赶紧下手吧
+                                            </div>
+                                            <div class="info">
+                                                <span class="date">2016年04月02日 10:10</span>
+                                                <span class="type">颜色分类：20寸50张小脚丫</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="fromWhom">
+                                            <img src="../img/img-my/whom.png">
+                                            <div class="userName">麦兜兜</div>
+                                            <div class="star">
+                                                <ol>
+                                                    <li class="cur"></li>
+                                                    <li class="cur"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="whomTxt">
+                                            <div class="txt">毕竟便宜，没多好，6寸过胶还大很多，看到特不舒服，想丢掉的冲动。
+                                            </div>
+                                            <div class="info">
+                                                <span class="date">2016年04月01日 10:10</span>
+                                                <span class="type">颜色分类：20寸50张小脚丫</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="fromWhom">
+                                            <img src="../img/img-my/whom.png">
+                                            <div class="userName">麦兜兜</div>
+                                            <div class="star">
+                                                <ol>
+                                                    <li class="cur"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="whomTxt">
+                                            <div class="txt">真是人们说的一分价钱一分货，质量太差了，太忙了没怎么问，就下单了，今天收到货打开一看，都想退货，又嫌麻烦就算了，外面那个皮就是厚纸片。有潮气或者水就坏了
+                                            </div>
+                                            <div class="info">
+                                                <span class="date">2016年03月20日 22:25</span>
+                                                <span class="type">颜色分类：20寸50张小脚丫</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="pageGro">
+                                <div class="pageUp" title="上一页">上一页</div>
+                                <div class="pageList">
+                                    <ul><li class="on">1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>
+                                </div>
+                                <div class="pageDown" title="下一页">下一页</div>
+                            </div>
+                            <script src="../js/pageGroup.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="proShow">
+        <div class="showIn">
+            <div id="slideBox" class="slideBox">
+                <div class="hd">
+                    <ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li><a href="javascript:;"><img src="../img/img-order/pr01.jpg" height="800" width="800" /></a></li>
+                        <li><a href="javascript:;"><img src="../img/img-order/pr02.jpg" height="800" width="800"  /></a></li>
+                        <li><a href="javascript:;"><img src="../img/img-order/pr03.jpg" height="800" width="800"  /></a></li>
+                        <li><a href="javascript:;"><img src="../img/img-order/pr04.jpg" height="800" width="800"  /></a></li>
+                        <li><a href="javascript:;"><img src="../img/img-order/pr05.jpg" height="800" width="800"  /></a></li>
+                    </ul>
+                </div>
+                <div class="prevNext">
+                    <a class="prev" href="javascript:void(0)"></a>
+                    <a class="next" href="javascript:void(0)"></a>
+                </div>
+                <div class="close">
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                $('.proShow').hide();
+                $('.proIn a.readBtn').click(function(event) {
+                    $('.proShow').fadeIn(300);
+                });
+                $('.proShow .showIn .close').click(function(event) {
+                    $('.proShow').fadeOut(300);
+                });
+            })
+        </script>
+        <script>
+            jQuery(".slideBox").slide({mainCell:".bd ul",effect:"left",trigger:"click"});
+        </script>
+    </div>
+</div>
+
+<!-- 服务 -->
+<div id="botSer" class="w1100 m0a">
+    <ul>
+        <li><a href="javascript:;"><img src="../img/img-index/ser01.png"></a></li>
+        <li><a href="javascript:;"><img src="../img/img-index/ser02.png"></a></li>
+        <li><a href="javascript:;"><img src="../img/img-index/ser03.png"></a></li>
+    </ul>
+</div>
+
+<!-- 底部信息 -->
+<div id="footHandle">
+    <div class="handleCon w1100 m0a">
+        <dl class="dl01">
+            <dt><i class="iconSprite"></i>帮助中心</dt>
+            <dd><a href="../helpCenter/help.html">在线客服</a></dd>
+            <dd><a href="../helpCenter/help.html">找回密码</a></dd>
+            <dd><a href="../helpCenter/help.html">隐私说明</a></dd>
+        </dl>
+        <dl class="dl02">
+            <dt><i class="iconSprite"></i>配送及支付</dt>
+            <dd><a href="../helpCenter/help.html">配送时间及费用</a></dd>
+            <dd><a href="../helpCenter/help.html">支付方式</a></dd>
+            <dd><a href="../helpCenter/help.html">快递查询</a></dd>
+        </dl>
+        <dl class="dl03">
+            <dt><i class="iconSprite"></i>关于我们</dt>
+            <dd><a href="../helpCenter/help.html">联系我们</a></dd>
+            <dd><a href="../helpCenter/help.html">品牌故事</a></dd>
+            <dd><a href="../helpCenter/help.html">招贤纳士</a></dd>
+        </dl>
+        <dl class="dl04">
+            <dt><i class="iconSprite"></i>手机冲印</dt>
+            <dd><a href="javascript:;" title="android下载"><img src="../img/img-index/ewm.png"><span>android下载</span></a></dd>
+            <dd><a href="javascript:;" title="ios下载"><img src="../img/img-index/ewm.png"><span>ios下载</span></a></dd>
+            <dd><a href="javascript:;" title="iPad下载"><img src="../img/img-index/ewm.png"><span>iPad下载</span></a></dd>
+        </dl>
+    </div>
+</div>
+
+<!-- 版权所有 -->
+<div id="footer">
+    <div class="footerIn w1100 m0a">
+        <p class="p1">广州指印数码科技有限公司</p>
+        <p class="p2">Copyright 2010-2016 All Rights Reserved. <a href="http://www.miitbeian.gov.cn">粤ICP备16046154号</a></p>
+        <ul>
+            <li><a href="javascript:;"><img src="../img/img-index/bott01.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott02.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott03.png"></a></li>
+            <li><a href="javascript:;"><img src="../img/img-index/bott04.png"></a></li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var time_now_server,time_now_client,time_end,time_server_client,timerID;
+    time_end=new Date("2016/6/31 23:59:59");//结束的时间
+    time_end=time_end.getTime();
+
+    time_now_server=new Date();
+    time_now_server=time_now_server.getTime();
+
+    time_now_client=new Date();
+    time_now_client=time_now_client.getTime();
+
+    time_server_client=time_now_server-time_now_client;
+    setTimeout("show_time()",1000);
+    function show_time()
+    {
+        var timer = document.getElementById("timer");
+        if(!timer){return;}
+        timer.innerHTML =time_server_client;
+        var time_now,time_distance,str_time;
+        var int_day,int_hour,int_minute,int_second;
+        var time_now=new Date();
+        time_now=time_now.getTime()+time_server_client;
+        time_distance=time_end-time_now;
+        if(time_distance>0)
+        {
+            int_day=Math.floor(time_distance/86400000)
+            time_distance-=int_day*86400000;
+            int_hour=Math.floor(time_distance/3600000)
+            time_distance-=int_hour*3600000;
+            int_minute=Math.floor(time_distance/60000)
+            time_distance-=int_minute*60000;
+            int_second=Math.floor(time_distance/1000)
+            int_hour = Math.floor(int_day*24/24/int_hour);
+            //int_hour = Math.floor(int_day*24/int_hour);
+            if(int_hour<10)
+                int_hour="0"+int_hour;
+            if(int_minute<10)
+                int_minute="0"+int_minute;
+            if(int_second<10)
+                int_second="0"+int_second;
+            str_time=int_day+"天"+int_hour+"时"+int_minute+"分"+int_second+"秒";
+           //str_time=int_hour+"时"+int_minute+"分"+int_second+"秒";
+            timer.innerHTML=str_time;
+            setTimeout("show_time()",1000);
+        }
+        else
+        {
+            //timer.innerHTML =timer.innerHTML;
+            timer.innerHTML='活动已结束'
+            clearTimeout(timerID)
+        }
+    }
+</script>
+</body>
+</html>
+
